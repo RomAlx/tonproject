@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+
+    #Nginx Service
+    webserver:
+        image: nginx:alpine
+        container_name: tonproject-nginx
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./:/var/www
+            #DEV
+            - ./docker/nginx/conf.d/app.conf:/etc/nginx/conf.d/app.conf
+            #PROD
+            #- ./docker/nginx/conf.d/appProd.conf:/etc/nginx/conf.d/app.conf
+            #- ./docker/nginx/ssl:/etc/ssl
+        links:
+            - app
+
+
+    #Python Service
+    app:
+        env_file: .env
+        build:
+            context: .
+            dockerfile: ./docker/backend/Dockerfile
+        expose:
+            - "8000"
+        container_name: tonproject-python
+        restart: unless-stopped
+        tty: true
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+            - ./docker/backend/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+        links:
+            - db
+
+    #MySQL Service
+    db:
+        image: mysql:8
+        container_name: tonproject-mysql
+        restart: always
+        tty: true
+        ports:
+            - "33061:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: ton_project
+            MYSQL_DATABASE: ton_project
+        volumes:
+            - dbdata:/var/lib/mysql
+            - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+
+#Volumes
+volumes:
+    dbdata:
+        driver: local
