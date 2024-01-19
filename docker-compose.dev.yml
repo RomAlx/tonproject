@@ -24,6 +24,8 @@ services:
         build:
             context: .
             dockerfile: ./docker/backend/Dockerfile
+            args:
+                - PROJECT_URL=${PROJECT_DEV_URL}
         expose:
             - "8000"
         container_name: tonproject-python
