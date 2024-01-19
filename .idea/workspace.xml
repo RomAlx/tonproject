@@ -5,36 +5,141 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tonproject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/conf.d/app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/conf.d/appProd.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/ssl/ton_project.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/ssl/ton_project.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-frontend/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/design/extremeplinko_1280x768.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/design/fonts/Azonix.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/design/fonts/READ FIRST.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/css/color-black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/css/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/images/feature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/images/feature2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/images/mrs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/images/scoreboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/font-awesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/highlight.js/highlight.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/highlight.js/styles/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/jquery.easing/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/magnific-popup/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/magnific-popup/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/magnific-popup/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/assets/vendor/magnific-popup/magnific-popup.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/documentation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/background_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_bet_half.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_bet_multiply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_continue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_fullscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_sound_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_sound_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/button_whatsapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_drag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_drag_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_exit_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_plinko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_plinko_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_result_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/item_stat_display.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/loader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/logo_p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_ball.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_ball.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_button.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_button.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_change.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_change.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_hit.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_hit.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_hit_2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_hit_2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_noscore.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_noscore.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_nowin.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_nowin.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_result.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_result.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_score.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_score.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_start.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_start.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_win.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/assets/sounds/sound_win.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/css/fonts/azonix-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/css/fonts/azonix-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/p2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/sound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/createjs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/detectmobilebrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/modernizr-2.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/js/vendor/p2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/share.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/game/share.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/01_preview_loading.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/02_preview_landing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/03_preview_gameplay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/04_preview_gameplay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/05_preview_gameresult.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/06_preview_not_support.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/07_preview_portrait_gameplay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/08_preview_portrait_gameplay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/preview/09_preview_portrait_gameplay3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codecanyon-sN8p8jyQ-extreme-plinko-html5-game/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/conf.d/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/conf.d/app_dev.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/conf.d/appProd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/conf.d/app_prod.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +175,12 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "FastAPI.tonproject.executor": "Run",
+    "HTTP Request.All in test_main.executor": "Run",
+    "Makefile Target.dev.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/roma/Desktop/work/tonproject",
+    "last_opened_file_path": "/Users/roma/PycharmProjects/tonproject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,7 +198,22 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Makefile Target.clean_dev">
+    <configuration name="All in test_main" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test_main.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="clean_dev" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="clean_dev" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="dev" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="tonproject" type="Python.FastAPI">
       <option name="file" value="$PROJECT_DIR$/main.py" />
       <module name="tonproject" />
@@ -107,6 +229,13 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile Target.clean_dev" />
+        <item itemvalue="Makefile Target.dev" />
+        <item itemvalue="HTTP Request.All in test_main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -127,7 +256,8 @@
       <workItem from="1705615022381" duration="57000" />
       <workItem from="1705615084673" duration="1428000" />
       <workItem from="1705617114568" duration="1899000" />
-      <workItem from="1705619161493" duration="2355000" />
+      <workItem from="1705619161493" duration="3886000" />
+      <workItem from="1705676166569" duration="2609000" />
     </task>
     <servers />
   </component>
@@ -138,6 +268,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tonproject$tonproject.coverage" NAME="tonproject Coverage Results" MODIFIED="1705621046222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/tonproject$tonproject.coverage" NAME="tonproject Coverage Results" MODIFIED="1705622168830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
