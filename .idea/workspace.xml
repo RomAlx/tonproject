@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tonproject-backend/Logs/logs/Telegram.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-backend/Messages/TelegramMessages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-backend/Messages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-backend/Objects/Telegram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tonproject-backend/Objects/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tonproject-backend/Controllers/TelegramController.py" beforeDir="false" afterPath="$PROJECT_DIR$/tonproject-backend/Controllers/TelegramController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tonproject-backend/Logs/logs/routes.log" beforeDir="false" afterPath="$PROJECT_DIR$/tonproject-backend/Logs/logs/Routes.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tonproject-backend/Routes/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/tonproject-backend/Routes/Routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tonproject-backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tonproject-backend/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +132,7 @@
       <workItem from="1705615084673" duration="1428000" />
       <workItem from="1705617114568" duration="1899000" />
       <workItem from="1705619161493" duration="3886000" />
-      <workItem from="1705676166569" duration="25815000" />
+      <workItem from="1705676166569" duration="26396000" />
     </task>
     <servers />
   </component>
