@@ -1,0 +1,109 @@
+2024-01-20 02:40:55,383 - Telegram - INFO - Received message from:
+AlekseyRomanovsky
+2024-01-20 02:41:17,785 - Telegram - INFO - Received message from:AlekseyRomanovsky
+2024-01-20 02:58:06,853 - Telegram - INFO - Received message from:AlekseyRomanovsky
+2024-01-20 02:58:06,853 - Telegram - INFO - Received message from:AlekseyRomanovsky
+2024-01-20 03:01:31,420 - Telegram - INFO - Received update: Message(channel_chat_created=False, chat=Chat(first_name='Алексей', id=324354843, last_name='Романовский', type=<ChatType.PRIVATE>, username='AlekseyRomanovsky'), date=datetime.datetime(2024, 1, 20, 3, 1, 31, tzinfo=datetime.timezone.utc), delete_chat_photo=False, entities=(MessageEntity(length=6, offset=0, type=<MessageEntityType.BOT_COMMAND>),), from_user=User(first_name='Алексей', id=324354843, is_bot=False, language_code='ru', last_name='Романовский', username='AlekseyRomanovsky'), group_chat_created=False, message_id=25, supergroup_chat_created=False, text='/start') with (MessageEntity(length=6, offset=0, type=<MessageEntityType.BOT_COMMAND>),)
+2024-01-20 03:03:56,307 - Telegram - INFO - Received update: (MessageEntity(length=6, offset=0, type=<MessageEntityType.BOT_COMMAND>),)
+2024-01-20 03:04:16,688 - Telegram - INFO - Received update: ()
+2024-01-20 03:04:16,688 - Telegram - INFO - Received update: ()
+2024-01-20 03:15:59,135 - Telegram - INFO - Recieved message: 50
+2024-01-20 03:15:59,227 - Telegram - INFO - Recieved message: tezt
+2024-01-20 03:15:59,227 - Telegram - INFO - Recieved message: tezt
+2024-01-20 03:16:28,026 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:16:28,026 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:16:28,026 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:16:28,026 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:16:28,026 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:17:55,901 - Telegram - INFO - Bot command: bot_command
+2024-01-20 03:18:21,401 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:30,599 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:18:30,599 - Telegram - INFO - Recieved message: Jopa
+2024-01-20 03:18:40,572 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:40,572 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:40,572 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:50,885 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:50,885 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:50,885 - Telegram - INFO - Bot command: /start
+2024-01-20 03:18:50,885 - Telegram - INFO - Bot command: /start
+2024-01-20 03:26:58,916 - Telegram - INFO - user id- User(first_name='Алексей', id=324354843, is_bot=False, language_code='ru', last_name='Романовский', username='AlekseyRomanovsky') bot command - /start
+2024-01-20 03:29:25,993 - Telegram - INFO - user id- User(first_name='Алексей', id=324354843, is_bot=False, language_code='ru', last_name='Романовский', username='AlekseyRomanovsky') bot command - /start
+2024-01-20 03:29:49,834 - Telegram - INFO - user id- User(first_name='Алексей', id=324354843, is_bot=False, language_code='ru', last_name='Романовский', username='AlekseyRomanovsky') bot command - /start
+2024-01-20 03:29:49,834 - Telegram - INFO - user id- User(first_name='Алексей', id=324354843, is_bot=False, language_code='ru', last_name='Романовский', username='AlekseyRomanovsky') bot command - /start
+2024-01-20 03:31:04,679 - Telegram - INFO - user id- 324354843 bot command - /start
+2024-01-20 03:31:17,998 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:31:17,998 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:33:30,910 - Telegram - INFO - user id- 324354843 bot command - /start
+2024-01-20 03:33:30,910 - Telegram - INFO - user id- 324354843 bot command - /start
+2024-01-20 03:33:30,910 - Telegram - INFO - user id- 324354843 bot command - /start
+2024-01-20 03:51:36,759 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:36,864 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:36,864 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:39,105 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:39,105 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:39,105 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:43,285 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:43,285 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:43,285 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:43,285 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:51,507 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:51,507 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:51,507 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:51,507 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:51:51,507 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:07,677 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:52:39,811 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:54:00,195 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:54:03,891 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:54:03,891 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:54:08,401 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,401 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,401 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,507 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,507 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,507 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:08,507 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:10,644 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:10,644 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:10,644 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:10,644 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:10,644 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:14,857 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:23,040 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:54:39,210 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:55:12,652 - Telegram - INFO - user id - 324354843 recieved message: Jopa
+2024-01-20 03:55:15,162 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:55:15,162 - Telegram - INFO - user id - 324354843 bot command - /start
+2024-01-20 03:55:18,648 - Telegram - INFO - user id - 324354843 recieved message: jopa
+2024-01-20 03:55:18,648 - Telegram - INFO - user id - 324354843 recieved message: jopa
+2024-01-20 03:55:18,648 - Telegram - INFO - user id - 324354843 recieved message: jopa
+2024-01-20 03:59:10,893 - Telegram - INFO - user id - 324354843 bot command - /start

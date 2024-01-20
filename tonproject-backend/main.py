@@ -1,13 +1,13 @@
 import asyncio
 
 from fastapi import FastAPI
-from .Routes.items import router as items_router
+from .Routes.Routes import router as items_router
 
-from .Controllers.TelegramController import TelegramController
+from .Objects.Telegram import Telegram
 
 app = FastAPI()
 
-tg = TelegramController()
+tg = Telegram()
 
 app.include_router(items_router)
 
