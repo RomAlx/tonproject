@@ -6,8 +6,8 @@ FRONTEND_DIR = tonproject-frontend
 all: dev
 
 # Сборка и запуск для разработки
-dev: build_dev
-	$(DOCKER_COMPOSE_DEV) up
+dev:
+	$(DOCKER_COMPOSE_DEV) up --force-recreate
 
 # Сборка и запуск для продакшн
 prod: build_prod
@@ -16,8 +16,8 @@ prod: build_prod
 	$(DOCKER_COMPOSE_PROD) up
 
 # Сборка для разработки
-build_dev:
-	$(DOCKER_COMPOSE_DEV) build
+#build_dev:
+#	$(DOCKER_COMPOSE_DEV) build
 
 # Сборка для продакшн
 build_prod:
