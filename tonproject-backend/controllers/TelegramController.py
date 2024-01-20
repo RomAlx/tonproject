@@ -1,8 +1,9 @@
+from telegram import Update, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 
-from ..Objects.Telegram import Telegram
-from ..Logs.Logger import Logger
-from ..Chat.ChatConfig import Chat
+from ..objects.Telegram import Telegram
+from ..logs.Logger import Logger
+from ..chat.ChatConfig import Chat
 
 
 class TelegramController:
@@ -27,17 +28,39 @@ class TelegramController:
         if update.callback_query:
             await self.callback(update=update)
 
+    async def remove_keyboard(self, update: Update, type: str):
+        if type == 'callback':
+            try:
+                await self.bot.edit_message_reply_markup(
+                    chat_id=update.callback_query.message.chat_id,
+                    message_id=update.callback_query.message.message_id,
+                    reply_markup=None
+                )
+            except Exception as e:
+                self.logger.warn('There is no reply markup for delete')
+        elif type == 'message':
+            try:
+                await self.bot.edit_message_reply_markup(
+                    chat_id=update.message.chat_id,
+                    message_id=update.message.message_id,
+                    reply_markup=ReplyKeyboardRemove()
+                )
+            except Exception as e:
+                self.logger.warn('There is no reply markup for delete')
+
     async def commands(self, update):
+        await self.remove_keyboard(update, 'message')
         if update.message.text == "/start":
             await self.tg.bot.send_photo(
                 chat_id=update.message.chat_id,
-                photo=open((self.chat.base_dir+self.chat.start_image), "rb"),
+                photo=open((self.chat.base_dir + self.chat.start_image), "rb"),
                 caption=self.chat.start_message,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=self.chat.start_keyboard()
             )
 
     async def messages(self, update):
+        await self.remove_keyboard(update, 'message')
         await self.tg.bot.send_message(
             chat_id=update.message.chat_id,
             text=self.chat.default,
@@ -45,11 +68,7 @@ class TelegramController:
         )
 
     async def callback(self, update):
-        await self.bot.edit_message_reply_markup(
-            chat_id=update.callback_query.message.chat_id,
-            message_id=update.callback_query.message.message_id,
-            reply_markup=None
-        )
+        await self.remove_keyboard(update, 'callback')
         if update.callback_query.data == "game":
             await self.tg.bot.send_message(
                 chat_id=update.callback_query.message.chat_id,

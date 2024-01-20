@@ -6,18 +6,22 @@ FRONTEND_DIR = tonproject-frontend
 all: dev
 
 # Сборка и запуск для разработки
-dev:
+dev: #build_dev
+	rm -rf ./tonproject-backend/static/*
+	cp -R ./tonproject-frontend/dist/* ./tonproject-backend/static/
 	$(DOCKER_COMPOSE_DEV) up --force-recreate
 
 # Сборка и запуск для продакшн
 prod: build_prod
 	cd $(FRONTEND_DIR) && npm run build
 	cd ..
+	rm -rf ./tonproject-backend/static/*
+	cp -R ./tonproject-frontend/dist/* ./tonproject-backend/static/
 	$(DOCKER_COMPOSE_PROD) up
 
 # Сборка для разработки
-#build_dev:
-#	$(DOCKER_COMPOSE_DEV) build
+build_dev:
+	$(DOCKER_COMPOSE_DEV) build
 
 # Сборка для продакшн
 build_prod:

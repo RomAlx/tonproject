@@ -1,15 +1,22 @@
 import json
+import os
+from dotenv import load_dotenv
 from fastapi import APIRouter, Request
-from ..Logs.Logger import Logger
-from ..Controllers.TelegramController import TelegramController
+from starlette.responses import FileResponse
+
+from ..logs.Logger import Logger
+from ..controllers.TelegramController import TelegramController
 
 router = APIRouter()
-logger = Logger(name="Routes").get_logger()
+logger = Logger(name="routes").get_logger()
+
+load_dotenv()
+base_dir = os.getenv("BASE_DIR")
 
 
-@router.get("/")
-async def root():
-    return {"HELLO": "WORLD!"}
+@router.get("/", response_class=FileResponse)
+async def index():
+    return (base_dir + "/static/index.html")
 
 
 @router.post("/api/telegram/webhook")
