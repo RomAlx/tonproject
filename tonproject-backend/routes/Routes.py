@@ -19,6 +19,10 @@ async def index():
     return (base_dir + "/static/index.html")
 
 
+@router.get("/game/documentation", response_class=FileResponse)
+async def index():
+    return (base_dir + "/static/documentation/index.html")
+
 @router.post("/api/telegram/webhook")
 async def telegram_webhook(request: Request):
     data = await request.json()

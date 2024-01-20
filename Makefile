@@ -9,6 +9,7 @@ all: dev
 dev: #build_dev
 	rm -rf ./tonproject-backend/static/*
 	cp -R ./tonproject-frontend/dist/* ./tonproject-backend/static/
+	cp -R ./tonproject-frontend/documentation ./tonproject-backend/static/
 	$(DOCKER_COMPOSE_DEV) up --force-recreate
 
 # Сборка и запуск для продакшн
