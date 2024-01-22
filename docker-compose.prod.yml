@@ -24,9 +24,11 @@ services:
         env_file: .env
         build:
             context: .
-            dockerfile: ./docker/backend/Dockerfile
+            dockerfile: docker/backend/Dockerfile
             args:
                 - PROJECT_URL=${PROJECT_PROD_URL}
+                - TON_API_KEY=${TON_PROD_API_KEY}
+                - WALLET=${WALLET_PROD}
         expose:
             - "8000"
         container_name: tonproject-python

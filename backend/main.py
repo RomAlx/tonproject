@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from .routes.Routes import router as items_router
+from .routes.routes import router as routes
+from .routes.api import router as api
 
 from .objects.Telegram import Telegram
 
@@ -13,7 +14,9 @@ tg = Telegram()
 load_dotenv()
 base_dir = os.getenv("BASE_DIR")
 
-app.include_router(items_router)
+app.include_router(routes)
+app.include_router(api, prefix="/api")
+
 app.mount("/", StaticFiles(directory=(base_dir+"/static"), html=True), name="static")
 app.add_middleware(
     CORSMiddleware,

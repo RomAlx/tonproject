@@ -19,9 +19,6 @@ class Telegram:
         await self.application.bot.deleteWebhook()
         await self.application.bot.set_webhook(url=self.webhook, allowed_updates=Update.ALL_TYPES)
 
-    def get_bot(self) -> Bot:
-        return self.bot
-
     def create_update(self, data: dict) -> Update:
         update = Update.de_json(data=data, bot=self.bot)
         return update

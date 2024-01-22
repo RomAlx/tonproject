@@ -3,6 +3,10 @@ FROM python:3.9
 
 ARG PROJECT_URL
 ENV PROJECT_URL=${PROJECT_URL}
+ARG TON_API_KEY
+ENV TON_API_KEY=${TON_API_KEY}
+ARG WALLET
+ENV WALLET=${WALLET}
 ENV PYTHONPATH="${PYTHONPATH}:/var/www"
 
 # Устанавливаем рабочую директорию внутри контейнера
@@ -14,6 +18,8 @@ RUN pip install -r requirements.txt
 
 # Копируем остальные файлы проекта в рабочую директорию
 COPY . .
+
+RUN pip install ./libs/pytonapi-main
 
 # Указываем порт, на котором будет работать приложение
 EXPOSE 8000
