@@ -1,0 +1,85 @@
+{
+    "aborted": true,
+    "account": {
+        "address": "0:247bc1cda6bbe67c59d93db207e925bb51b8b87604181acf41703a6efff72e2f",
+        "icon": null,
+        "is_scam": false,
+        "name": null
+    },
+    "action_phase": null,
+    "block": "(0,8000000000000000,17601614)",
+    "bounce_phase": null,
+    "compute_phase": {
+        "exit_code": null,
+        "gas_fees": null,
+        "gas_used": null,
+        "skip_reason": "cskip_no_gas",
+        "skipped": true,
+        "success": null,
+        "vm_steps": null
+    },
+    "credit_phase": {
+        "credit": 1,
+        "fees_collected": 0
+    },
+    "destroyed": false,
+    "end_status": "active",
+    "hash": "53a89321480475586f3765680074aeb8f2355dc668f05ecc63c951254380b988",
+    "in_msg": {
+        "bounce": false,
+        "bounced": false,
+        "created_at": 1706007215,
+        "created_lt": 18451109000006,
+        "decoded_body": {
+            "amount": "50000000",
+            "forward_payload": {
+                "is_right": true,
+                "value": {
+                    "op_code": 0,
+                    "sum_type": "TextComment",
+                    "value": {
+                        "text": ""
+                    }
+                }
+            },
+            "query_id": 1706007211538,
+            "sender": "0:162f901f88d065e8d137e47e295e602ceedb67f8883b5c0e02369b45dc5d4c74"
+        },
+        "decoded_op_name": "jetton_notify",
+        "destination": {
+            "address": "0:247bc1cda6bbe67c59d93db207e925bb51b8b87604181acf41703a6efff72e2f",
+            "icon": null,
+            "is_scam": false,
+            "name": null
+        },
+        "fwd_fee": 1088675,
+        "ihr_disabled": true,
+        "ihr_fee": 0,
+        "import_fee": 0,
+        "init": null,
+        "op_code": "0x7362d09c",
+        "source": {
+            "address": "0:0c9c09d079d259e78a5a21df1209afc33e4083ed30fef79000f0e96b29a1f216",
+            "icon": null,
+            "is_scam": false,
+            "name": null
+        },
+        "value": 1
+    },
+    "lt": 18451109000007,
+    "orig_status": "active",
+    "out_msgs": [],
+    "prev_trans_hash": "4558a34e2980edafb58509113eb59a11276e268976f8c59e972edd5d64fe0932",
+    "prev_trans_lt": 18451096000001,
+    "state_update_new": "3b090cc90c084f0af73f1ef808866d7385b440fbd1c260fe144ef98a367cd054",
+    "state_update_old": "38d86dae4a5b13e005a68497f91125c460e4e1e9732f7d34e1df3218998fdda0",
+    "storage_phase": {
+        "fees_collected": 10,
+        "fees_due": null,
+        "status_change": "acst_unchanged"
+    },
+    "success": false,
+    "total_fees": 10,
+    "transaction_type": "TransOrd",
+    "utime": 1706007215
+}

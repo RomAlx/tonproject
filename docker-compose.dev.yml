@@ -28,6 +28,7 @@ services:
                 - PROJECT_URL=${PROJECT_DEV_URL}
                 - TON_API_KEY=${TON_DEV_API_KEY}
                 - WALLET=${WALLET_DEV}
+                - JETTON_ADDRESS=${JETTON_ADDRESS_DEV}
         expose:
             - "8000"
         container_name: tonproject-python

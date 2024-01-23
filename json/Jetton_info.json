@@ -1,0 +1,17 @@
+{
+    "holders_count": 1,
+    "metadata": {
+        "address": "0:2561230baa1fbebc0ae34f556c230208e7fb316d9a459488dd8635265061cc00",
+        "catalogs": null,
+        "decimals": "6",
+        "description": "Whoever wields the Rinnegan is sent from heaven to become the \"God of Creation\"",
+        "image": "https://cache.tonapi.io/imgproxy/dexZjgOD2CBAX7BBBVDTfTUzcOMxK9Om6AySfhwmAtU/rs:fill:200:200:1/g:no/aHR0cHM6Ly9jb2ludm90ZS5jYy91c2VyX2RhdGEvY29pbl9sb2dvLzJkMGZlOGJiOGI1ZWQ0NWQzOTA2ODU0ZjRlOWQ1ZmY1LmpwZWc.webp",
+        "name": "RinneganJetton",
+        "social": null,
+        "symbol": "RJT",
+        "websites": null
+    },
+    "mintable": true,
+    "total_supply": "100000000000000",
+    "verification": "none"
+}

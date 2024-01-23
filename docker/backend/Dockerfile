@@ -7,6 +7,8 @@ ARG TON_API_KEY
 ENV TON_API_KEY=${TON_API_KEY}
 ARG WALLET
 ENV WALLET=${WALLET}
+ARG JETTON_ADDRESS
+ENV JETTON_ADDRESS=${JETTON_ADDRESS}
 ENV PYTHONPATH="${PYTHONPATH}:/var/www"
 
 # Устанавливаем рабочую директорию внутри контейнера
@@ -19,7 +21,7 @@ RUN pip install -r requirements.txt
 # Копируем остальные файлы проекта в рабочую директорию
 COPY . .
 
-RUN pip install ./libs/pytonapi-main
+RUN pip install ./libs/python-telegram-bot-master
 
 # Указываем порт, на котором будет работать приложение
 EXPOSE 8000

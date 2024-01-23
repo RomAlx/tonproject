@@ -5,114 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/TonController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/Ton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/AvailableMethods.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_all_address_formats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_transactions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/nfts/get_by_collection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/nfts/get_by_owner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/examples/sse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/blockchain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/dns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/emulate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/jettons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/liteserver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/nft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/rates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/sse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/staking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/tonconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/traces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/wallet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/websocket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/_address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/_balance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/blockchain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/dns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/domains.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/jettons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/liteserver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/nft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/rates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/staking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/tonconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/traces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/blockchain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/dns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/emulate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/jettons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/liteserver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/nft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/rates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/sse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/staking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/tonconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/traces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/wallet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_accounts_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_blockchain_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_dns_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_events_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_jettons_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_nft_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_rates_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_sse_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_staking_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_storage_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_tonconnect_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_traces_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_websocket_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_accounts_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_blockchain_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_dns_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_events_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_jettons_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_nft_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_rates_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_sse_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_staking_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_storage_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_tonconnect_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_traces_methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/Jetton_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/Transaction_jetton_rtt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/Transaction_jetton_tpt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/Transaction_ton.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/TelegramController.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/TelegramController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Telegram.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/Telegram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/Routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/TonController.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/TonController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/conf.d/app_prod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/conf.d/app_prod.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/AvailableMethods.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_all_address_formats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/accounts/get_transactions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/nfts/get_by_collection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/nfts/get_by_owner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/examples/sse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/accounts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/blockchain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/dns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/emulate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/jettons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/liteserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/nft.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/rates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/sse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/staking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/tonconnect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/traces.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/wallet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/async_tonapi/methods/websocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/_address.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/_balance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/accounts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/blockchain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/dns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/domains.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/jettons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/liteserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/nft.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/rates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/staking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/tonconnect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/schema/traces.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/accounts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/blockchain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/dns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/emulate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/events.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/jettons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/liteserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/nft.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/rates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/sse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/staking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/tonconnect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/traces.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/tonapi/methods/wallet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/pytonapi/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_accounts_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_blockchain_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_dns_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_events_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_jettons_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_nft_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_rates_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_sse_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_staking_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_storage_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_tonconnect_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_traces_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/async_tonapi/test_websocket_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_accounts_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_blockchain_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_dns_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_events_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_jettons_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_nft_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_rates_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_sse_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_staking_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_storage_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_tonconnect_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi-main/tests/tonapi/test_traces_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,34 +145,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "FastAPI.tonproject.executor": "Run",
-    "HTTP Request.All in test_main.executor": "Run",
-    "Makefile Target.clean_dev.executor": "Run",
-    "Makefile Target.dev.executor": "Run",
-    "Makefile Target.prod.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/roma/PycharmProjects/tonproject/telegram_bot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;FastAPI.tonproject.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.clean_dev.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.dev.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.prod.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/roma/PycharmProjects/tonproject/telegram_bot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/telegram_bot" />
@@ -255,7 +256,9 @@
       <workItem from="1705617114568" duration="1899000" />
       <workItem from="1705619161493" duration="3886000" />
       <workItem from="1705676166569" duration="41066000" />
-      <workItem from="1705894273340" duration="18008000" />
+      <workItem from="1705894273340" duration="18956000" />
+      <workItem from="1705987403692" duration="1811000" />
+      <workItem from="1705989354177" duration="23573000" />
     </task>
     <servers />
   </component>

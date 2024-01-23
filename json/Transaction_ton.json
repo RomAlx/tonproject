@@ -1,0 +1,77 @@
+{
+    "aborted": false,
+    "account": {
+        "address": "0:247bc1cda6bbe67c59d93db207e925bb51b8b87604181acf41703a6efff72e2f",
+        "icon": null,
+        "is_scam": false,
+        "name": null
+    },
+    "action_phase": {
+        "fwd_fees": 0,
+        "skipped_actions": 0,
+        "success": true,
+        "total_actions": 0,
+        "total_fees": 0
+    },
+    "block": "(0,8000000000000000,17603552)",
+    "bounce_phase": null,
+    "compute_phase": {
+        "exit_code": 0,
+        "gas_fees": 775000,
+        "gas_used": 775,
+        "skip_reason": null,
+        "skipped": false,
+        "success": true,
+        "vm_steps": 18
+    },
+    "credit_phase": {
+        "credit": 2395344052,
+        "fees_collected": 0
+    },
+    "destroyed": false,
+    "end_status": "active",
+    "hash": "ec887f33c652720aed0f07fb35ab61ba6b37390f8d68d6aaf5127293324aac69",
+    "in_msg": {
+        "bounce": false,
+        "bounced": false,
+        "created_at": 1706013331,
+        "created_lt": 18453097000002,
+        "decoded_body": null,
+        "decoded_op_name": null,
+        "destination": {
+            "address": "0:247bc1cda6bbe67c59d93db207e925bb51b8b87604181acf41703a6efff72e2f",
+            "icon": null,
+            "is_scam": false,
+            "name": null
+        },
+        "fwd_fee": 666672,
+        "ihr_disabled": true,
+        "ihr_fee": 0,
+        "import_fee": 0,
+        "init": null,
+        "op_code": null,
+        "source": {
+            "address": "0:162f901f88d065e8d137e47e295e602ceedb67f8883b5c0e02369b45dc5d4c74",
+            "icon": null,
+            "is_scam": false,
+            "name": null
+        },
+        "value": 2395344052
+    },
+    "lt": 18453097000003,
+    "orig_status": "active",
+    "out_msgs": [],
+    "prev_trans_hash": "7ace837a699aa21ea323f3f486b44cbddc6796cdec01f0375000736ab243c9b7",
+    "prev_trans_lt": 18452905000007,
+    "state_update_new": "97a0301c0622dbe63160c9affbfde50625d6da6b5fd76feedc7d1390bb7aaa36",
+    "state_update_old": "a435573d67eb306bae02fead5669044feab7136fe3a30e318e2d3b74f3a6c16d",
+    "storage_phase": {
+        "fees_collected": 152,
+        "fees_due": null,
+        "status_change": "acst_unchanged"
+    },
+    "success": true,
+    "total_fees": 775152,
+    "transaction_type": "TransOrd",
+    "utime": 1706013331
+}
