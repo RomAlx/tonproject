@@ -4,20 +4,23 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-load_dotenv()
-# Замените следующие значения вашими учетными данными MySQL:
-username = os.getenv("DB_USERNAME")
-password = os.getenv("DB_PASSWORD")
-server = os.getenv("DB_HOST")
-port = os.getenv("DB_PORT")
-db_name = os.getenv("DB_DATABASE")
 
-# Пример строки подключения для MySQL
-SQLALCHEMY_DATABASE_URL = f"mysql+mysqlconnector://{username}:{password}@{server}:{port}/{db_name}"
+class Database:
+    def __init__(self):
+        load_dotenv()
+        # Замените следующие значения вашими учетными данными MySQL:
+        self.username = os.getenv("DB_USERNAME")
+        self.password = os.getenv("DB_PASSWORD")
+        self.server = os.getenv("DB_HOST")
+        self.port = os.getenv("DB_PORT")
+        self.db_name = os.getenv("DB_DATABASE")
 
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL
-)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+        # Пример строки подключения для MySQL
+        self.sqlalchemy_database_url = f"mysql+mysqlconnector://{self.username}:{self.password}@{self.server}:{self.port}/{self.db_name}"
 
-Base = declarative_base()
+        self.engine = create_engine(
+            self.sqlalchemy_database_url
+        )
+        self.sessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+
+        self.base = declarative_base()

@@ -15,7 +15,7 @@ class Logger:
         # Настраиваем FileHandler для записи в файл в папке logs
         log_file = log_directory / f"{name}.log"
         file_handler = logging.FileHandler(log_file)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s\n%(message)s\n')
         file_handler.setFormatter(formatter)
 
         # Добавляем FileHandler к нашему logger'у

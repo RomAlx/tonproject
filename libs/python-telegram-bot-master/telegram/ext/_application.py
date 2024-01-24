@@ -947,13 +947,13 @@ class Application(Generic[BT, CCT, UD, CD, BD, JQ], AsyncContextManager["Applica
                 header isn't set or it is set to a wrong token.
 
                 .. versionadded:: 20.0
-            unix (:class:`pathlib.Path` | :obj:`str`, optional): Path to the unix socket file. Path
+            unix (:class:`pathlib.Path` | :obj:`str`, optional): Path to the unix websocket_controllers file. Path
                 does not need to exist, in which case the file will be created.
 
                 Caution:
                     This parameter is a replacement for the default TCP bind. Therefore, it is
                     mutually exclusive with :paramref:`listen` and :paramref:`port`. When using
-                    this param, you must also run a reverse proxy to the unix socket and set the
+                    this param, you must also run a reverse proxy to the unix websocket_controllers and set the
                     appropriate :paramref:`webhook_url`.
 
                 .. versionadded:: NEXT.VERSION

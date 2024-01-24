@@ -61,7 +61,7 @@ class HTTPXRequest(BaseRequest):
             Defaults to ``5``.
         write_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the maximum
             amount of time (in seconds) to wait for a write operation to complete (in terms of
-            a network socket; i.e. POSTing a request or uploading a file).
+            a network websocket_controllers; i.e. POSTing a request or uploading a file).
             This value is used unless a different value is passed to :meth:`do_request`.
             Defaults to ``5``.
         connect_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the

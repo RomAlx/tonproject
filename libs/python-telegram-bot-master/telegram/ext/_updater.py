@@ -537,13 +537,13 @@ class Updater(AsyncContextManager["Updater"]):
                 header isn't set or it is set to a wrong token.
 
                 .. versionadded:: 20.0
-            unix (:class:`pathlib.Path` | :obj:`str`, optional): Path to the unix socket file. Path
+            unix (:class:`pathlib.Path` | :obj:`str`, optional): Path to the unix websocket_controllers file. Path
                 does not need to exist, in which case the file will be created.
 
                 Caution:
                     This parameter is a replacement for the default TCP bind. Therefore, it is
                     mutually exclusive with :paramref:`listen` and :paramref:`port`. When using
-                    this param, you must also run a reverse proxy to the unix socket and set the
+                    this param, you must also run a reverse proxy to the unix websocket_controllers and set the
                     appropriate :paramref:`webhook_url`.
 
                 .. versionadded:: NEXT.VERSION
@@ -562,7 +562,7 @@ class Updater(AsyncContextManager["Updater"]):
         if unix:
             error_msg = (
                 "You can not pass unix and {0}, only use one. Unix if you want to "
-                "initialize a unix socket, or {0} for a standard TCP server."
+                "initialize a unix websocket_controllers, or {0} for a standard TCP server."
             )
             if not isinstance(listen, DefaultValue):
                 raise RuntimeError(error_msg.format("listen"))
@@ -571,7 +571,7 @@ class Updater(AsyncContextManager["Updater"]):
             if not webhook_url:
                 raise RuntimeError(
                     "Since you set unix, you also need to set the URL to the webhook "
-                    "of the proxy you run in front of the unix socket."
+                    "of the proxy you run in front of the unix websocket_controllers."
                 )
 
         async with self.__lock:

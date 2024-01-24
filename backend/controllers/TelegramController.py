@@ -11,7 +11,7 @@ class TelegramController:
         self.tg = Telegram()
         self.bot = self.tg.bot
         self.chat = Chat()
-        self.logger = Logger(name="telegram").get_logger()
+        self.logger = Logger(name="telegram_controller").get_logger()
 
     async def distribution(self, data):
         update = self.tg.create_update(data=data)

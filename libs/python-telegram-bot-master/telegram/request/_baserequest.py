@@ -182,7 +182,7 @@ class BaseRequest(
                 :attr:`DEFAULT_NONE`.
             write_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the maximum
                 amount of time (in seconds) to wait for a write operation to complete (in terms of
-                a network socket; i.e. POSTing a request or uploading a file) instead of the time
+                a network websocket_controllers; i.e. POSTing a request or uploading a file) instead of the time
                 specified during creating of this object. Defaults to :attr:`DEFAULT_NONE`.
             connect_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the
                 maximum amount of time (in seconds) to wait for a connection attempt to a server
@@ -234,7 +234,7 @@ class BaseRequest(
                 :attr:`DEFAULT_NONE`.
             write_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the maximum
                 amount of time (in seconds) to wait for a write operation to complete (in terms of
-                a network socket; i.e. POSTing a request or uploading a file) instead of the time
+                a network websocket_controllers; i.e. POSTing a request or uploading a file) instead of the time
                 specified during creating of this object. Defaults to :attr:`DEFAULT_NONE`.
             connect_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the
                 maximum amount of time (in seconds) to wait for a connection attempt to a server
@@ -285,7 +285,7 @@ class BaseRequest(
                 :attr:`DEFAULT_NONE`.
             write_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the maximum
                 amount of time (in seconds) to wait for a write operation to complete (in terms of
-                a network socket; i.e. POSTing a request or uploading a file) instead of the time
+                a network websocket_controllers; i.e. POSTing a request or uploading a file) instead of the time
                 specified during creating of this object. Defaults to :attr:`DEFAULT_NONE`.
             connect_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the
                 maximum amount of time (in seconds) to wait for a connection attempt to a server
@@ -436,7 +436,7 @@ class BaseRequest(
                 :attr:`DEFAULT_NONE`.
             write_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the maximum
                 amount of time (in seconds) to wait for a write operation to complete (in terms of
-                a network socket; i.e. POSTing a request or uploading a file) instead of the time
+                a network websocket_controllers; i.e. POSTing a request or uploading a file) instead of the time
                 specified during creating of this object. Defaults to :attr:`DEFAULT_NONE`.
             connect_timeout (:obj:`float` | :obj:`None`, optional): If passed, specifies the
                 maximum amount of time (in seconds) to wait for a connection attempt to a server
