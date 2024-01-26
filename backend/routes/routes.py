@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from fastapi import APIRouter
 from starlette.responses import FileResponse
 
-from ..logs.Logger import Logger
+from ..logs.logger import Logger
 
 router = APIRouter()
 logger = Logger(name="routes").get_logger()

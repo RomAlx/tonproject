@@ -1,0 +1,3 @@
+mnemonics = ['verb', 'senior', 'inform', 'brother', 'illness', 'result', 'side', 'raise', 'dry', 'museum', 'tiny', 'frequent', 'dose', 'lunch', 'always', 'north', 'kite', 'rice', 'network', 'faculty', 'raise', 'raw', 'social', 'husband']
+address = 'kQC4zbT6bbWvnfjHFzfK7XZN9ko9Aakgtu_aYaliX75p43nR'
+is_testnet = True

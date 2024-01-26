@@ -1,9 +1,9 @@
 import json
 from fastapi import APIRouter, Request
 
-from ..logs.Logger import Logger
-from ..controllers.TelegramController import TelegramController as telegram_controller
-from ..controllers.TonController import TonController as ton_controller
+from ..logs.logger import Logger
+from ..controllers.telegram_controller import TelegramController as telegram_controller
+from ..controllers.ton_controller import TonController as ton_controller
 
 router = APIRouter()
 logger = Logger(name="api").get_logger()
@@ -49,4 +49,17 @@ async def ton_transactions_info():
 async def ton_transactions_info():
     logger.info(f"Requested: jetton")
     await ton_controller.jetton()
+    return {"ok": "200"}
+
+
+@router.get("/ton/create_transaction")
+async def ton_transactions_info():
+    logger.info(f"Requested: creating transaction")
+    await ton_controller.create_transaction()
+    return {"ok": "200"}
+
+@router.get("/ton/wallet_balance")
+async def ton_transactions_info():
+    logger.info(f"Requested: wallet balance")
+    await ton_controller.wallet_balance()
     return {"ok": "200"}

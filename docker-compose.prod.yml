@@ -27,11 +27,13 @@ services:
             dockerfile: docker/backend/Dockerfile
             args:
                 - PROJECT_URL=${PROJECT_PROD_URL}
+                - TELEGRAM_BOT_API_TOKEN=${TELEGRAM_BOT_API_TOKEN_PROD}
                 - IS_TESTNET=${IS_TESTNET}
                 - TON_API_KEY=${TON_PROD_API_KEY}
                 - WALLET=${WALLET_PROD}
                 - JETTON_ADDRESS=${JETTON_ADDRESS_PROD}
                 - TON_WEBSOCKET_URL=${TON_WEBSOCKET_URL_PROD}
+                - MNEMONICS=${MNEMONICS_PROD}
         expose:
             - "8000"
         container_name: tonproject-python

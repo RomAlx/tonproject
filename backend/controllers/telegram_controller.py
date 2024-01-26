@@ -2,8 +2,8 @@ from telegram import Update, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 
 from ..objects.Telegram import Telegram
-from ..logs.Logger import Logger
-from ..chat.ChatConfig import Chat
+from ..logs.logger import Logger
+from ..chat.chat_config import Chat
 
 
 class TelegramController:
