@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/migrations/versions/f9ce7bc07f34_init_migration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/balance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/transaction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/models/wallet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/ton_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ton_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/example_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/TonWallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/TonWallet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -274,7 +260,7 @@
       <workItem from="1706473259232" duration="327000" />
       <workItem from="1706473605790" duration="620000" />
       <workItem from="1706529150878" duration="23323000" />
-      <workItem from="1706563564489" duration="36400000" />
+      <workItem from="1706563564489" duration="37019000" />
     </task>
     <servers />
   </component>
