@@ -11,14 +11,10 @@ from .routes.api import router as api
 from .routes.api import ton_controller
 from .routes.api import telegram_controller
 
-from .objects.Database import Database
-
 app = FastAPI()
 
 tg = telegram_controller.tg
 ton_wallet = ton_controller.ton_wallet
-
-db = Database()
 
 load_dotenv()
 base_dir = os.getenv("BASE_DIR")

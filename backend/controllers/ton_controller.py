@@ -32,13 +32,13 @@ class TonController:
     async def get_event(self, event: TransactionEventData) -> None:
         event_id = event.tx_hash
         ton_transaction = await self.tonapi.blockchain.get_transaction_data(event.tx_hash)
-        self.logger.info(
-            json.dumps(json.loads(ton_transaction.json()), indent=4, ensure_ascii=False, sort_keys=True))
+        # self.logger.info(
+        #     json.dumps(json.loads(ton_transaction.json()), indent=4, ensure_ascii=False, sort_keys=True))
         if ton_transaction.out_msgs:
             if ton_transaction.out_msgs[0].decoded_op_name == 'jetton_transfer':
                 jetton_transaction = await self.tonapi.jettons.get_jetton_transfer_event(event_id)
-                self.logger.info(
-                   json.dumps(json.loads(jetton_transaction.json()), indent=4, ensure_ascii=False, sort_keys=True))
+                # self.logger.info(
+                #    json.dumps(json.loads(jetton_transaction.json()), indent=4, ensure_ascii=False, sort_keys=True))
                 for action in jetton_transaction.actions:
                     if action.JettonTransfer:
                         status = action.status

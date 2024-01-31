@@ -5,44 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/objects/Celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/Client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/exceptions/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/_address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/_balance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/jettons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/nft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/schema/traces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/objects/ton_client/utils/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/wallet/wallet_create_test_transaction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workers/jetton_transaction_worker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workers/ton_transaction_worker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/supervisord/supervisord.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/migrations/versions/f9ce7bc07f34_init_migration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/balance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/transaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/wallet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/ton_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ton_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Ton/Ton.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Ton/TonClient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Ton/TonWallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/TonWallet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Ton/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/enums/transaction_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/wallet/wallet_creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/wallet/wallet_creation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/wallet/wallet_deploy.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/wallet/wallet_deploy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/wallet/wallets/new_wallet_testnet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/wallet/wallets/testnet_dev_wallet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/example_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/objects/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/Database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/objects/TonWallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/TonWallet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/accounts.py" afterDir="false" />
@@ -60,7 +38,6 @@
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/traces.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/traces.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,11 +112,11 @@
       <recent name="$PROJECT_DIR$/tonproject-frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/models" />
       <recent name="$PROJECT_DIR$/backend/objects" />
       <recent name="$PROJECT_DIR$/backend/ton_client/schema" />
       <recent name="$PROJECT_DIR$/backend/ton_client" />
       <recent name="$PROJECT_DIR$/backend/ton_client/events/schema" />
-      <recent name="$PROJECT_DIR$/backend/ton_client/utils" />
     </key>
   </component>
   <component name="RunManager" selected="Python.wallet_create_test_transaction">
@@ -297,7 +274,7 @@
       <workItem from="1706473259232" duration="327000" />
       <workItem from="1706473605790" duration="620000" />
       <workItem from="1706529150878" duration="23323000" />
-      <workItem from="1706563564489" duration="30679000" />
+      <workItem from="1706563564489" duration="36400000" />
     </task>
     <servers />
   </component>

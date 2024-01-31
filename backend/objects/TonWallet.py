@@ -67,8 +67,8 @@ class TonWallet():
             await self.client.init()
             seqno = await self.get_seqno(self.client, self.base_wallet_address)
             transfer_query = self.wallet.create_transfer_message(
-                to_addr=self.jetton_address_for_transactions,
-                amount=to_nano(0.01, 'ton'),
+                to_addr=self.jetton_address,
+                amount=to_nano(0.05, 'ton'),
                 seqno=seqno,
                 payload=body
             )
