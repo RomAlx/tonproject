@@ -60,7 +60,20 @@ services:
             - dbdata:/var/lib/mysql
             - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
 
+    #Redis Service
+    redis:
+        image: redis:alpine
+        container_name: tonproject-redis
+        restart: always
+        tty: true
+        ports:
+            - "6379:6379"
+        volumes:
+            - redisdata:/data
+
 #Volumes
 volumes:
     dbdata:
+        driver: local
+    redisdata:
         driver: local

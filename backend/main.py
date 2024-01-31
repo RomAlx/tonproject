@@ -16,7 +16,7 @@ from .objects.Database import Database
 app = FastAPI()
 
 tg = telegram_controller.tg
-ton = ton_controller.ton_wallet.ton
+ton_wallet = ton_controller.ton_wallet
 
 db = Database()
 
@@ -37,7 +37,6 @@ app.add_middleware(
 
 
 @app.on_event("startup")
-async def set_tg_webhook():
+async def startup_event():
     await tg.set_webhook()
-    # asyncio.create_task(ton_controller.websocket_subscribe())
-    # await ton_controller.ton_wallet.init_client()
+    asyncio.create_task(ton_controller.websocket_subscribe())

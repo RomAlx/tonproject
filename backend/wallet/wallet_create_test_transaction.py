@@ -1,17 +1,20 @@
 import asyncio
-import os
 import requests
 from pathlib import Path
 from pytonlib import TonlibClient
 from tonsdk.contract.wallet import Wallets, WalletVersionEnum
+from tonsdk.utils import to_nano
 
+
+async def get_seqno(client: TonlibClient, address: str):
+     data = await client.raw_run_method(method='seqno', stack_data=[], address=address)
+     return int(data['stack'][0][1], 16)
 
 async def main():
     try:
-        wallet_file = input(
-            "\033[32mEnter the name of your wallet in the wallets folder \033[0m\033[33m (example: new_wallet_testnet.txt)\033[0m\033[32m:\033[0m ")
+        wallet_file = input("\033[32mEnter the name of your wallet in the wallets folder \033[0m\033[33m (example: new_wallet_testnet.txt)\033[0m\033[32m:\033[0m ")
 
-        with open('./wallets/' + wallet_file, 'r') as file:
+        with open('./wallets/'+wallet_file, 'r') as file:
             for line in file:
                 if line.startswith('mnemonics ='):
                     # Строка содержит список мнемоник, обработаем ее
@@ -33,8 +36,7 @@ async def main():
         print('\033[91mThis file was not found or it doesn`t have wallet structure\033[0m')
         exit()
     try:
-        mnemonics, pub_k, priv_k, wallet = Wallets.from_mnemonics(mnemonics=mnemonics, version=WalletVersionEnum.v4r2,
-                                                                  workchain=0)
+        mnemonics, pub_k, priv_k, wallet = Wallets.from_mnemonics(mnemonics=mnemonics, version=WalletVersionEnum.v4r2, workchain=0)
 
         url = 'https://ton.org/testnet-global.config.json' if is_testnet else 'https://ton.org/global-config.json'
 
@@ -43,20 +45,27 @@ async def main():
         keystore_dir = '/tmp/ton_keystore'
         Path(keystore_dir).mkdir(parents=True, exist_ok=True)
 
-        client = TonlibClient(ls_index=14, config=config, keystore=keystore_dir, tonlib_timeout=60)
+        client = TonlibClient(ls_index=None, config=config, keystore=keystore_dir, tonlib_timeout=60)
 
         await client.init()
 
-        query = wallet.create_init_external_message()
+        seqno = await get_seqno(client, address)
 
-        deploy_message = query['message'].to_boc(False)
+        print(seqno)
 
-        await client.raw_send_message(deploy_message)
+        transfer_query = wallet.create_transfer_message(to_addr='0QAke8HNprvmfFnZPbIH6SW7Ubi4dgQYGs9BcDpu__cuL_2E',
+                                                        amount=to_nano(0.03, 'ton'), seqno=seqno, payload='Works?')
+
+        transfer_message = transfer_query['message'].to_boc(False)
+
+        await client.raw_send_message(transfer_message)
 
         print('\033[92mDone\033[0m')
+
     except Exception as e:
-        print(f"\033[91mYour wallet has already been initialized or has insufficient balance\033[0m\n")
+        print(f"\033[91mYour wallet may have insufficient balance\033[0m\n")
         print(e)
+
 
 
 if __name__ == '__main__':

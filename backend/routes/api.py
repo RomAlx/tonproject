@@ -52,11 +52,19 @@ async def ton_transactions_info():
     return {"ok": "200"}
 
 
-@router.get("/ton/create_transaction")
-async def ton_transactions_info():
-    logger.info(f"Requested: creating transaction")
-    await ton_controller.create_transaction()
+@router.get("/ton/create_transaction_ton")
+async def create_transaction_ton():
+    logger.info(f"Requested: creating transaction ton")
+    await ton_controller.create_transaction_ton()
     return {"ok": "200"}
+
+
+@router.get("/ton/create_transaction_jetton")
+async def create_transaction_jetton():
+    logger.info(f"Requested: creating transaction jetton")
+    await ton_controller.create_transaction_jetton()
+    return {"ok": "200"}
+
 
 @router.get("/ton/wallet_balance")
 async def ton_transactions_info():
