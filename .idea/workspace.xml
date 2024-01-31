@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/versions/0d8429201e9e_init_migration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/balance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/token.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/migrations/versions/581e391e6061_wallet_changes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/wallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/wallet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/Client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repositories/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/exceptions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repositories/user_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/exceptions/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/wallet/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/_address.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/_balance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/accounts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/events.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/jettons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/nft.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/schema/traces.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/ton_client/utils/utils.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -302,7 +279,7 @@
       <workItem from="1706473259232" duration="327000" />
       <workItem from="1706473605790" duration="620000" />
       <workItem from="1706529150878" duration="23323000" />
-      <workItem from="1706563564489" duration="43864000" />
+      <workItem from="1706563564489" duration="44656000" />
     </task>
     <servers />
   </component>

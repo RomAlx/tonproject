@@ -10,6 +10,7 @@ class Wallet(Base):
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     wallet_address = Column(String(255), nullable=False)
+    wallet_address_for_user = Column(String(255), nullable=False)
 
     user = relationship("User", back_populates="wallet", uselist=False)
     transaction = relationship("Transaction", back_populates="wallet")
