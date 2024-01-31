@@ -19,6 +19,7 @@ sqlalchemy_database_url = f"mysql+mysqlconnector://{username}:{password}@{server
 engine = create_engine(
     sqlalchemy_database_url
 )
-sessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+sessionLocal = sessionmaker(bind=engine)
+session = sessionLocal()
 
 Base = declarative_base()

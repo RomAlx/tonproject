@@ -1,6 +1,8 @@
 from telegram import Update, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 
+from backend.repositories.user_repository import UserRepository as user_repository
+
 from ..objects.Telegram import Telegram
 from ..logs.logger import Logger
 from ..chat.chat_config import Chat
@@ -8,10 +10,13 @@ from ..chat.chat_config import Chat
 
 class TelegramController:
     def __init__(self):
+        self.logger = Logger(name="telegram_controller").get_logger()
+
+        self.chat = Chat()
         self.tg = Telegram()
         self.bot = self.tg.bot
-        self.chat = Chat()
-        self.logger = Logger(name="telegram_controller").get_logger()
+
+
 
     async def distribution(self, data):
         update = self.tg.create_update(data=data)
@@ -19,7 +24,7 @@ class TelegramController:
             if update.message.entities:
                 for entity in update.message.entities:
                     if entity.type == "bot_command":
-                        self.logger.info(f"user id - {update.message.from_user.id} bot command - {update.message.text}")
+                        self.logger.info(f"user id - {update.message.from_user.id} username - {update.message.from_user.first_name} bot command - {update.message.text}")
                         await self.commands(update=update)
             else:
                 self.logger.info(f"user id - {update.message.from_user.id} recieved message: {update.message.text}")
@@ -51,6 +56,8 @@ class TelegramController:
     async def commands(self, update):
         await self.remove_keyboard(update, 'message')
         if update.message.text == "/start":
+            user = user_repository.create_user(tg_id=update.message.from_user.id, username=update.message.from_user.first_name)
+            self.logger.info(f'User: {user}')
             await self.tg.bot.send_photo(
                 chat_id=update.message.chat_id,
                 photo=open((self.chat.base_dir + self.chat.start_image), "rb"),
