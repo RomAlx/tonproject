@@ -1,6 +1,8 @@
 from telegram import Update, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 
+from ..controllers.nowpayments_controller import NowPaymentsController
+
 from backend.repositories.user_repository import UserRepository as user_repository
 
 from ..objects.Telegram import Telegram
@@ -11,12 +13,10 @@ from ..chat.chat_config import Chat
 class TelegramController:
     def __init__(self):
         self.logger = Logger(name="telegram_controller").get_logger()
-
+        self.np_c = NowPaymentsController()
         self.chat = Chat()
         self.tg = Telegram()
         self.bot = self.tg.bot
-
-
 
     async def distribution(self, data):
         update = self.tg.create_update(data=data)
@@ -24,7 +24,8 @@ class TelegramController:
             if update.message.entities:
                 for entity in update.message.entities:
                     if entity.type == "bot_command":
-                        self.logger.info(f"user id - {update.message.from_user.id} username - {update.message.from_user.first_name} bot command - {update.message.text}")
+                        self.logger.info(
+                            f"user id - {update.message.from_user.id} username - {update.message.from_user.first_name} bot command - {update.message.text}")
                         await self.commands(update=update)
             else:
                 self.logger.info(f"user id - {update.message.from_user.id} recieved message: {update.message.text}")
@@ -56,7 +57,11 @@ class TelegramController:
     async def commands(self, update):
         await self.remove_keyboard(update, 'message')
         if update.message.text == "/start":
-            user = user_repository.create_user(tg_id=update.message.from_user.id, username=update.message.from_user.first_name)
+            user = user_repository.create_user(tg_id=update.message.from_user.id,
+                                               username=update.message.from_user.first_name)
+            if not user.np_id:
+                user.np_id = self.np_c.create_new_user(user.tg_id)
+                user_repository.update_user(user)
             self.logger.info(f'User: {user}')
             await self.tg.bot.send_photo(
                 chat_id=update.message.chat_id,

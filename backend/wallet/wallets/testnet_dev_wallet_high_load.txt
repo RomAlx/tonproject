@@ -1,0 +1,3 @@
+mnemonics = ['budget', 'emotion', 'elbow', 'glory', 'where', 'argue', 'later', 'saddle', 'sing', 'door', 'twenty', 'patch', 'entire', 'stumble', 'neglect', 'motor', 'carpet', 'island', 'body', 'cage', 'put', 'fantasy', 'turkey', 'panda']
+address = 'kQAJVPkyxdoPHLOuTLdhcrHILubkTlcH8UBS8qpPx0LWuDpO'
+is_testnet = True

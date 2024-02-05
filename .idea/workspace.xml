@@ -5,8 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/migrations/versions/581e391e6061_wallet_changes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/wallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/wallet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/nowpayments_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/shit_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/nowpayments/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/nowpayments/create_new_user_account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/nowpayments/currencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/nowpayments/get_user_balance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/nowpayments/get_users_accounts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/209.4c207ac3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/209.4c207ac3.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/576.c1292b0b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/576.c1292b0b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/655.c6f9eb20.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/655.c6f9eb20.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/90.e04dc8f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/90.e04dc8f4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/app.b6d57bbc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/app.b6d57bbc.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/chunk-vendors.c5be03f0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/js/chunk-vendors.c5be03f0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/wallet/wallet_high_load_creation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/wallet/wallets/testnet_dev_wallet_high_load.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/Nunito/Nunito-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/dash/DashBoard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/i18n/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/game/GameView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/nowpayments/nowpayments_currecies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json/nowpayments/nowpayments_new_user_account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/chat/chat_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/chat/chat_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/migrations/versions/056f3a99e80f_init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/versions/3c1f3ab0d3c9_init_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/migrations/versions/581e391e6061_wallet_changes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/balance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repositories/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/css/app.b2d625b8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/js/app.460cce6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/js/app.460cce6b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/js/chunk-vendors.b5dada09.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/js/chunk-vendors.b5dada09.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/supervisord/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/supervisord/supervisord.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Game.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/game/Game.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/Jetton_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/ton/Jetton_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/Transaction_jetton_rtt.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/ton/Transaction_jetton_rtt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/Transaction_jetton_tpt.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/ton/Transaction_jetton_tpt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/Transaction_ton.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/ton/Transaction_ton.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -57,58 +135,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "FastAPI.tonproject.executor": "Run",
-    "HTTP Request.All in test_main.executor": "Run",
-    "Makefile Target.clean_dev.executor": "Run",
-    "Makefile Target.dev.executor": "Run",
-    "Makefile Target.prod.executor": "Run",
-    "Python.script (1).executor": "Run",
-    "Python.script.executor": "Run",
-    "Python.wallet_create_test_transaction.executor": "Run",
-    "Python.wallet_create_transaction.executor": "Run",
-    "Python.wallet_creation.executor": "Run",
-    "Python.wallet_deploy.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/roma/PycharmProjects/tonproject/telegram_bot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;FastAPI.tonproject.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in test_main.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.clean_dev.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.dev.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.prod.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_new_user_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_user_balance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_users_accounts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.script (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wallet_create_test_transaction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wallet_create_transaction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wallet_creation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wallet_deploy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wallet_high_load_creation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/roma/PycharmProjects/tonproject/backend/nowpayments&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/telegram_bot" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/docker/telegram_bot_backend" />
-      <recent name="$PROJECT_DIR$/backend/controllers" />
-      <recent name="$PROJECT_DIR$/tonproject-frontend" />
+      <recent name="$PROJECT_DIR$/backend/nowpayments" />
+      <recent name="$PROJECT_DIR$/frontend/dist" />
+      <recent name="$PROJECT_DIR$/backend/static" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/wallets" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/symbols" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/objects" />
-      <recent name="$PROJECT_DIR$/backend/models" />
-      <recent name="$PROJECT_DIR$/backend/ton_client/schema" />
-      <recent name="$PROJECT_DIR$/backend/ton_client" />
-      <recent name="$PROJECT_DIR$/backend/ton_client/events/schema" />
+      <recent name="$PROJECT_DIR$/backend/nowpayments" />
+      <recent name="$PROJECT_DIR$/json/ton" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/wallets" />
+      <recent name="$PROJECT_DIR$/frontend/src/components/balance/deposit" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/currency" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.script (1)">
-    <configuration name="script (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.get_users_accounts">
+    <configuration name="auth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,12 +200,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/wallet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/nowpayments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/wallet/script.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/nowpayments/auth.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +214,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="create_new_user_account" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,12 +223,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/nowpayments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/script.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/nowpayments/create_new_user_account.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +237,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wallet_create_test_transaction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="currencies" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,12 +246,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/wallet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/nowpayments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/wallet/wallet_create_test_transaction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/nowpayments/currencies.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +260,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wallet_creation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_user_balance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,12 +269,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/nowpayments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/wallet/wallet_creation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/nowpayments/get_user_balance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,7 +283,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wallet_deploy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_users_accounts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,12 +292,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/wallet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/nowpayments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/wallet/wallet_deploy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/nowpayments/get_users_accounts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.script (1)" />
-        <item itemvalue="Python.wallet_create_test_transaction" />
-        <item itemvalue="Python.wallet_deploy" />
-        <item itemvalue="Python.wallet_creation" />
-        <item itemvalue="Python.script" />
+        <item itemvalue="Python.get_users_accounts" />
+        <item itemvalue="Python.auth" />
+        <item itemvalue="Python.get_user_balance" />
+        <item itemvalue="Python.create_new_user_account" />
+        <item itemvalue="Python.currencies" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +362,10 @@
       <workItem from="1706473259232" duration="327000" />
       <workItem from="1706473605790" duration="620000" />
       <workItem from="1706529150878" duration="23323000" />
-      <workItem from="1706563564489" duration="44656000" />
+      <workItem from="1706563564489" duration="49130000" />
+      <workItem from="1706893047482" duration="29792000" />
+      <workItem from="1707027531920" duration="17417000" />
+      <workItem from="1707157346577" duration="1499000" />
     </task>
     <servers />
   </component>
@@ -302,11 +388,16 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tonproject$wallet_creation.coverage" NAME="wallet_creation Coverage Results" MODIFIED="1706266041421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/tonproject$get_user_balance.coverage" NAME="get_user_balance Coverage Results" MODIFIED="1707154595145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/nowpayments" />
     <SUITE FILE_PATH="coverage/tonproject$wallet_deploy.coverage" NAME="wallet_deploy Coverage Results" MODIFIED="1706266884787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
+    <SUITE FILE_PATH="coverage/tonproject$get_users_accounts.coverage" NAME="get_users_accounts Coverage Results" MODIFIED="1707155051256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/nowpayments" />
     <SUITE FILE_PATH="coverage/tonproject$wallet_create_test_transaction.coverage" NAME="wallet_create_test_transaction Coverage Results" MODIFIED="1706438184939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
-    <SUITE FILE_PATH="coverage/tonproject$wallet_create_transaction.coverage" NAME="wallet_create_test_transaction Coverage Results" MODIFIED="1706283587267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
     <SUITE FILE_PATH="coverage/tonproject$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1706716452367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
-    <SUITE FILE_PATH="coverage/tonproject$script.coverage" NAME="script Coverage Results" MODIFIED="1706253172861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/tonproject$script.coverage" NAME="script Coverage Results" MODIFIED="1707148420901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/nowpayments" />
+    <SUITE FILE_PATH="coverage/tonproject$auth.coverage" NAME="auth Coverage Results" MODIFIED="1707155039796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/nowpayments" />
+    <SUITE FILE_PATH="coverage/tonproject$wallet_high_load_creation.coverage" NAME="wallet_high_load_creation Coverage Results" MODIFIED="1707027971308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
+    <SUITE FILE_PATH="coverage/tonproject$wallet_create_transaction.coverage" NAME="wallet_create_test_transaction Coverage Results" MODIFIED="1706283587267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/wallet" />
+    <SUITE FILE_PATH="coverage/tonproject$create_new_user_account.coverage" NAME="create_new_user_account Coverage Results" MODIFIED="1707151485389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/nowpayments" />
     <SUITE FILE_PATH="coverage/tonproject$tonproject.coverage" NAME="tonproject Coverage Results" MODIFIED="1705622168830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

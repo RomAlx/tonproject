@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, BigInteger
 from sqlalchemy.orm import relationship
 
 from backend.objects.Database import Base
@@ -7,7 +7,8 @@ class User(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
-    tg_id = Column(Integer, nullable=False)
+    tg_id = Column(BigInteger, nullable=False)
+    np_id = Column(BigInteger, nullable=True)
     username = Column(String(100))
 
     balance = relationship("Balance", back_populates="user", uselist=False)

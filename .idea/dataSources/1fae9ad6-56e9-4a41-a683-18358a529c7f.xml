@@ -1079,7 +1079,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="292" parent="1" name="ton_project">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-01-31.16:41:23</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-02-05.18:48:48</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="293" parent="1" name="mysql.infoschema">
@@ -1246,60 +1246,64 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>1</Position>
     </column>
     <column id="327" parent="301" name="tg_id">
-      <DasType>int|0s</DasType>
+      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="328" parent="301" name="username">
-      <DasType>varchar(100)|0s</DasType>
+    <column id="328" parent="301" name="np_id">
+      <DasType>bigint|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="329" parent="301" name="PRIMARY">
+    <column id="329" parent="301" name="username">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="330" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="330" parent="301" name="PRIMARY">
+    <key id="331" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="331" parent="302" name="id">
+    <column id="332" parent="302" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="332" parent="302" name="user_id">
+    <column id="333" parent="302" name="user_id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="333" parent="302" name="wallet_address">
+    <column id="334" parent="302" name="wallet_address">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="334" parent="302" name="wallet_address_for_user">
+    <column id="335" parent="302" name="wallet_address_for_user">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="335" parent="302" name="wallets_ibfk_1">
+    <foreign-key id="336" parent="302" name="wallets_ibfk_1">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <index id="336" parent="302" name="PRIMARY">
+    <index id="337" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="337" parent="302" name="user_id">
+    <index id="338" parent="302" name="user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="338" parent="302" name="PRIMARY">
+    <key id="339" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

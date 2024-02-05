@@ -1,0 +1,22 @@
+@import "color_fonts";
+@import "dashboard";
+@import "balance/deposit";
+@import "balance/withdraw";
+
+// DOC
+html,
+body {
+  background: #col[bg];
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.only_mobile {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.no-links{
+  text-decoration: none;
+}

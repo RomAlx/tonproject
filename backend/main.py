@@ -8,13 +8,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from .routes.routes import router as routes
 from .routes.api import router as api
 
-from .routes.api import ton_controller
+# from .routes.api import ton_controller
 from .routes.api import telegram_controller
 
 app = FastAPI()
 
 tg = telegram_controller.tg
-ton_wallet = ton_controller.ton_wallet
+# ton_wallet = ton_controller.ton_wallet
 
 load_dotenv()
 base_dir = os.getenv("BASE_DIR")
@@ -35,4 +35,4 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup_event():
     await tg.set_webhook()
-    asyncio.create_task(ton_controller.websocket_subscribe())
+    # asyncio.create_task(ton_controller.websocket_subscribe())

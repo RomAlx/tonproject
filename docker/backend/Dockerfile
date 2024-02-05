@@ -7,6 +7,12 @@ ENV PROJECT_URL=${PROJECT_URL}
 ARG TELEGRAM_BOT_API_TOKEN
 ENV TELEGRAM_BOT_API_TOKEN=${TELEGRAM_BOT_API_TOKEN}
 
+ARG NOWPAYMENTS_API_KEY
+ENV NOWPAYMENTS_API_KEY=${NOWPAYMENTS_API_KEY}
+
+ARG NOWPAYMENTS_SECRET
+ENV NOWPAYMENTS_SECRET=${NOWPAYMENTS_SECRET}
+
 ARG IS_TESTNET
 ENV IS_TESTNET=${IS_TESTNET}
 
@@ -31,34 +37,34 @@ ENV PYTHONPATH="${PYTHONPATH}:/var/www"
 WORKDIR /var/www
 
 # Устанавливаем зависимости для сборки OpenSSL
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    libssl-dev \
-    zlib1g-dev \
-    libncurses5-dev \
-    libncursesw5-dev \
-    libreadline-dev \
-    libsqlite3-dev \
-    libgdbm-dev \
-    libdb5.3-dev \
-    libbz2-dev \
-    libexpat1-dev \
-    liblzma-dev \
-    tk-dev \
-    libffi-dev \
-    wget
+#RUN apt-get update && apt-get install -y \
+#    build-essential \
+#    libssl-dev \
+#    zlib1g-dev \
+#    libncurses5-dev \
+#    libncursesw5-dev \
+#    libreadline-dev \
+#    libsqlite3-dev \
+#    libgdbm-dev \
+#    libdb5.3-dev \
+#    libbz2-dev \
+#    libexpat1-dev \
+#    liblzma-dev \
+#    tk-dev \
+#    libffi-dev \
+#    wget
 
 # Скачиваем и устанавливаем OpenSSL
-RUN wget https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1v/openssl-1.1.1v.tar.gz \
-    && tar -xzvf openssl-1.1.1v.tar.gz \
-    && cd openssl-1.1.1v \
-    && ./config \
-    && make \
-    && make install \
-    && ldconfig
+#RUN wget https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1v/openssl-1.1.1v.tar.gz \
+#    && tar -xzvf openssl-1.1.1v.tar.gz \
+#    && cd openssl-1.1.1v \
+#    && ./config \
+#    && make \
+#    && make install \
+#    && ldconfig
 
 # Удаляем архив и каталог с исходным кодом OpenSSL для уменьшения размера образа
-RUN rm -rf openssl-1.1.1v.tar.gz openssl-1.1.1v
+#RUN rm -rf openssl-1.1.1v.tar.gz openssl-1.1.1v
 
 # Копируем файлы зависимостей и устанавливаем их
 COPY requirements.txt .
