@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 
 from backend.objects.Database import Base
 
+
 class User(Base):
     __tablename__ = 'users'
 
@@ -12,7 +13,7 @@ class User(Base):
     username = Column(String(100))
 
     balance = relationship("Balance", back_populates="user", uselist=False)
-    wallet = relationship("Wallet", back_populates="user")
+    transactions = relationship("Transaction", back_populates="user")
 
     def __repr__(self):
         return f"<User(id={self.id}, tg_id={self.tg_id}, username='{self.username}')>"

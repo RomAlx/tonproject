@@ -32,16 +32,17 @@
 
   .input_wrapper {
     margin: 10px 0px 10px 0px;
+    padding: 10px;
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
   }
 
-  .jetton_icon {
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+  .ton_icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
   }
 
   .input_amount {
@@ -68,7 +69,45 @@
     transform: translateY(-50%);
     background-color: inherit;
     padding: 2px 5px;
-    border: 1px solid #col[txt_s];
-    border-radius: 4px;
+    border-left: 1px solid #col[txt_s];
+    color: #col[txt_s]
+  }
+
+  .input_address {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #col[txt_base];
+    width: 100%;
+  }
+
+  .input_address:focus {
+    outline: none;
+  }
+
+  .input_address::placeholder {
+    font-size: 14px;
+    color: #col[txt_s];
+  }
+
+  .payout_button {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-color: #col[base_button_bg];
+    color: #col[base_button_color];
+    border-radius: 5px;
+    padding: 5px;
+
+    h1 {
+      color: #col[base_button_color];
+      margin: 0px 0px 0px 0px;
+      font-size: 22px;
+    }
   }
 }

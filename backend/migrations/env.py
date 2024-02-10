@@ -9,7 +9,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from backend.objects.Database import Base
-from backend.models import User, Balance, Wallet, Transaction
+from backend.models import User, Balance, Transaction
 
 load_dotenv()
 # Замените следующие значения вашими учетными данными MySQL:

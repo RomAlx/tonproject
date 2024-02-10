@@ -80,5 +80,7 @@ EXPOSE 8000 5555
 
 COPY ./docker/supervisord/supervisord.conf /etc/supervisord.conf
 
-# Запускаем приложение FastAPI с помощью Uvicorn
-CMD ["supervisord", "-c", "/etc/supervisord.conf"]
+## Запускаем приложение FastAPI с помощью Uvicorn
+#CMD ["supervisord", "-c", "/etc/supervisord.conf"]
+
+CMD ["uvicorn", "backend.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]

@@ -2,7 +2,7 @@ import requests
 import json
 
 url = "https://api.nowpayments.io/v1/sub-partner"
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1NzUxOTE3OTUiLCJpYXQiOjE3MDcxNTg5OTksImV4cCI6MTcwNzE1OTI5OX0.bEMCXKir731-gypwWbLBn4RYRv-9uRhoG-gkyk8NmL8"
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1NzUxOTE3OTUiLCJpYXQiOjE3MDc0MjkwNDEsImV4cCI6MTcwNzQyOTM0MX0.n6BY7k9mz0_bHSH2AKerMfcBoT37_b6evGkhdRyvJtU"
 
 payload = {}
 headers = {

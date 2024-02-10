@@ -2,12 +2,17 @@
   <div class="only_mobile">
     <div class="container">
       <div class="d-flex justify-content-center">
-        <div class="balance_block">
+        <div v-if="user" class="balance_block">
+          <div class="row">
+            <p class="balance username">{{this.user.username}}</p>
+          </div>
           <div class="row">
             <p class="balance">
-              <span class="balance second">$</span>
-              0
-              <span class="balance second lil_size">.00</span>
+               {{Math.floor(this.user.user_balance)}}
+              <span class="balance second lil_size">
+                .{{((this.user.user_balance).toString().split('.')[1] || '0')}}
+              </span>
+              <span class="balance second"><img src="@/assets/img/icons/symbols/ton_symbol.svg" alt=""></span>
             </p>
           </div>
           <div class="row">
@@ -69,12 +74,61 @@
 </template>
 
 <script>
+import axios from 'axios'
+import {Store} from '@/store'
 export default {
   name: 'DashBoard',
   data() {
-    return {}
+    return {
+      user: null,
+    }
+  },
+  methods: {
+    async getUserInfo() {
+      console.log(`${Store().getAPI}/app/user`);
+      try {
+        const response = await axios.get(
+            `${Store().getAPI}/app/user`,
+            {
+              params: {
+                tg_id: 324354843,
+              }
+            }
+        );
+        if (response.data.user_id !== undefined) {
+          Store().setUser(response.data)
+          this.user = Store().getUser
+          console.log(this.user)
+          this.getUserBalance();
+        }
+      } catch (error) {
+        console.error('Ошибка при выполнении GET запроса:', error);
+      }
+    },
+    async getUserBalance() {
+      console.log(`${Store().getAPI}/np/get_balance`);
+      try {
+        const response = await axios.get(
+            `${Store().getAPI}/np/get_balance`,
+            {
+              params: {
+                np_id: this.user.np_id,
+              }
+            }
+        );
+        console.log(response.data)
+        if (response.data.user_balance !== undefined) {
+          this.user.user_balance = response.data.user_balance
+          Store().setUser(this.user)
+        }
+      } catch (error) {
+        console.error('Ошибка при выполнении GET запроса:', error);
+      }
+    },
+  },
+  mounted() {
+    this.getUserInfo();
   },
   computed: {},
-  methods: {},
 }
 </script>

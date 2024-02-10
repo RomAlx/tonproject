@@ -13,12 +13,12 @@ from ..chat.chat_config import Chat
 class TelegramController:
     def __init__(self):
         self.logger = Logger(name="telegram_controller").get_logger()
-        self.np_c = NowPaymentsController()
         self.chat = Chat()
         self.tg = Telegram()
         self.bot = self.tg.bot
 
-    async def distribution(self, data):
+    async def distribution(self, data, np_c):
+        self.np_c = np_c
         update = self.tg.create_update(data=data)
         if update.message:
             if update.message.entities:
@@ -60,7 +60,7 @@ class TelegramController:
             user = user_repository.create_user(tg_id=update.message.from_user.id,
                                                username=update.message.from_user.first_name)
             if not user.np_id:
-                user.np_id = self.np_c.create_new_user(user.tg_id)
+                user.np_id = await  self.np_c.create_new_user(user.tg_id)
                 user_repository.update_user(user)
             self.logger.info(f'User: {user}')
             await self.tg.bot.send_photo(

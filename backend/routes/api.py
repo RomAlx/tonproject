@@ -1,16 +1,20 @@
 import json
 from fastapi import APIRouter, Request
+from fastapi.responses import JSONResponse, StreamingResponse
 
 from ..logs.logger import Logger
 from ..controllers.telegram_controller import TelegramController as telegram_controller
+from ..controllers.app_controller import AppController as app_controller
+from ..controllers.nowpayments_controller import NowPaymentsController as nowpayments_controller
+
 # from ..controllers.ton_controller import TonController as ton_controller
-from ..controllers.shit_controller import ShitController as shit_controller
 
 router = APIRouter()
 logger = Logger(name="api").get_logger()
 # ton_controller = ton_controller()
 telegram_controller = telegram_controller()
-shit_controller = shit_controller()
+app_controller = app_controller()
+nowpayments_controller = nowpayments_controller()
 
 
 # async def ton_websocket_subscribe():
@@ -22,16 +26,96 @@ async def telegram_webhook(request: Request):
     data = await request.json()
     formatted_json = json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True)
     logger.info(f"Received:\n{formatted_json}")
-    await telegram_controller.distribution(data)
+    await telegram_controller.distribution(data, nowpayments_controller)
     return {"ok": "200"}
 
 
-@router.post("/shit/print")
-async def telegram_webhook(request: Request):
+@router.get("/app/user")
+async def app_user_get(request: Request):
+    tg_id = int(request.query_params.get('tg_id'))
+    logger.info(f"Requested user: {tg_id}")
+    data = app_controller.get_user_with_tg_id(tg_id=tg_id)
+    return JSONResponse(data)
+
+
+@router.get("/app/generate_qr")
+async def generate_qr(request: Request):
+    text = str(request.query_params.get('text'))
+    logger.info(f"Requested qr code generate: {text}")
+    img_stream = app_controller.generate_qr(text=text)
+    response = StreamingResponse(img_stream, media_type="image/png")
+    return response
+
+
+@router.get("/np/get_balance")
+async def get_balance(request: Request):
+    np_id = str(request.query_params.get('np_id'))
+    logger.info(f"Requested symbol payment info: {np_id}")
+    data = await nowpayments_controller.get_user_balance(np_id=np_id)
+    return JSONResponse(data)
+
+
+@router.get("/np/min_payment")
+async def min_payment(request: Request):
+    symbol = str(request.query_params.get('symbol'))
+    logger.info(f"Requested symbol payment info: {symbol}")
+    data = await nowpayments_controller.get_min_payment(symbol=symbol)
+    return JSONResponse(data)
+
+
+@router.get("/np/create_payment_page")
+async def pay_page(request: Request):
+    np_id = int(request.query_params.get('np_id'))
+    amount = float(request.query_params.get('amount'))
+    currency_to = str(request.query_params.get('currency_to'))
+    currency_from = str(request.query_params.get('currency_from'))
+    logger.info(f"Requested payment:\n"
+                f"NP id: {np_id}\n"
+                f"amount: {amount}\n"
+                f"currency_to: {currency_to}\n"
+                f"currency_from: {currency_from}")
+    data = await nowpayments_controller.get_pay_page(
+        np_id=np_id,
+        amount=amount,
+        currency_from=currency_from)
+    return JSONResponse(data)
+
+
+@router.post("/np/create_payout")
+async def create_payout(request: Request):
     data = await request.json()
-    shit_controller.print_shit(data)
-    return {"ok": "200"}
+    formatted_json = json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True)
+    logger.info(f"Create payout:\n{formatted_json}")
+    await nowpayments_controller.create_payout_transfer(data)
 
+
+@router.post("/np/payment_status")
+async def payment_status(request: Request):
+    try:
+        data = await request.json()
+        formatted_json = json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True)
+        logger.info(f"Received payment status:\n{formatted_json}")
+        await nowpayments_controller.update_payment_status(data)
+    except Exception as e:
+        print(e)
+
+
+@router.post("/np/payout_status")
+async def payout_status(request: Request):
+    data = await request.json()
+    formatted_json = json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True)
+    logger.info(f"Received payout status:\n{formatted_json}")
+    await nowpayments_controller.update_payout_status(data)
+
+
+@router.get("/np/pay_from_main")
+async def pay_from_main(request: Request):
+    np_id = str(request.query_params.get('np_id'))
+    amount = float(request.query_params.get('amount'))
+    logger.info(f"Received payout from main to sub:\n"
+                f"sub_id: {np_id}\n"
+                f"amount: {amount}")
+    await nowpayments_controller.pay_from_main(np_id, amount)
 #
 # @router.get("/ton/wallet_info")
 # async def ton_wallet_info():
