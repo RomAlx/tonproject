@@ -7,7 +7,7 @@ from backend.models.transaction import Transaction
 
 from backend.repositories.transaction_repository import TransactionRepository
 
-logger = Logger(name="payout_write_off_checker").get_logger()
+# logger = Logger(name="payout_write_off_checker").get_logger()
 
 
 @celery.task(queue='payout_write_off_checker')

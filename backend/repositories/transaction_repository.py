@@ -1,4 +1,6 @@
 from sqlalchemy.orm import Session
+from sqlalchemy import desc
+from sqlalchemy import and_, or_
 
 from backend.models import User
 from backend.models import Balance
@@ -41,7 +43,8 @@ class TransactionRepository:
     @staticmethod
     def create_transfer_to(transfer_to: dict) -> Transaction:
         user = session.query(User).filter(User.np_id == transfer_to['np_id']).one_or_none()
-        transaction = session.query(Transaction).filter(Transaction.payment_id == transfer_to['payment_id']).one_or_none()
+        transaction = session.query(Transaction).filter(
+            Transaction.payment_id == transfer_to['payment_id']).one_or_none()
         if not transaction:
             transaction = Transaction(
                 user=user,
@@ -95,3 +98,17 @@ class TransactionRepository:
         session.add(transaction)
         session.commit()
         return transaction
+
+    @staticmethod
+    def get_transaction_by_user_id(user_id: int, page: int = 1, per_page: int = 10) -> Transaction:
+        transactions_query = session.query(Transaction) \
+            .filter(
+            and_(
+                or_(Transaction.type == "deposit", Transaction.type == "withdraw"),
+                Transaction.payment_status != 'expired'
+            ),
+            Transaction.user_id == user_id
+        ) \
+            .order_by(Transaction.updated_at.desc())
+        transactions_page = transactions_query.limit(per_page).offset((page - 1) * per_page).all()
+        return transactions_page

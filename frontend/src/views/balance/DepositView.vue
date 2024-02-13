@@ -6,7 +6,7 @@
 import Deposit from "@/components/balance/deposit/Deposit.vue";
 
 export default {
-  name: "DashView",
+  name: "DepositView",
   components: {
     Deposit,
   },

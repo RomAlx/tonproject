@@ -4,13 +4,13 @@
       <div class="d-flex justify-content-center">
         <div v-if="user" class="balance_block">
           <div class="row">
-            <p class="balance username">{{this.user.username}}</p>
+            <p class="balance username">{{ this.user.username }}</p>
           </div>
           <div class="row">
             <p class="balance">
-               {{Math.floor(this.user.user_balance)}}
+              {{ Math.floor(this.user.user_balance) }}
               <span class="balance second lil_size">
-                .{{((this.user.user_balance).toString().split('.')[1] || '0')}}
+                .{{ ((this.user.user_balance).toString().split('.')[1] || '0') }}
               </span>
               <span class="balance second"><img src="@/assets/img/icons/symbols/ton_symbol.svg" alt=""></span>
             </p>
@@ -39,19 +39,29 @@
               </RouterLink>
             </div>
             <div class="col-4">
-              <div class="balance_button">
-                <img src="@/assets/img/icons/balance/history.svg" alt="\/">
-                <p>History</p>
-              </div>
+              <RouterLink
+                  to="/balance/history"
+                  class="no-links"
+              >
+                <div class="balance_button">
+                  <img src="@/assets/img/icons/balance/history.svg" alt="\/">
+                  <p>History</p>
+                </div>
+              </RouterLink>
             </div>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center">
         <div class="game_block">
-          <div class="game_button">
-            <p>PLAY</p>
-          </div>
+          <RouterLink
+              to="/game"
+              class="no-links"
+          >
+            <div class="game_button">
+              <p>PLAY</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
       <div class="d-flex justify-content-center">
@@ -76,6 +86,7 @@
 <script>
 import axios from 'axios'
 import {Store} from '@/store'
+
 export default {
   name: 'DashBoard',
   data() {

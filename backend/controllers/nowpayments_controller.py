@@ -20,13 +20,14 @@ from backend.workers.payout_write_off_checker_worker import check_write_off
 
 class NowPaymentsController:
     def __init__(self):
-        self.logger = self.logger = Logger(name="nowpayments_controller").get_logger()
+        self.logger = self.logger = Logger(name="controller.nowpayments").get_logger()
         self.app_url = os.getenv("PROJECT_URL")
         self.url = "https://api.nowpayments.io/v1/"
         self.id = "4575191795"
         self.secret = os.getenv("NOWPAYMENTS_SECRET")
         self.api_key = os.getenv("NOWPAYMENTS_API_KEY")
-        self.secret_2fa = 'FRJDUSBZMIVCUZKJ'
+        self.secret_2fa = os.getenv("NOWPAYMENTS_SECRET_2FA")
+        #self.secret_2fa = 'FRJDUSBZMIVCUZKJ'
         self.main_symbol = 'ton'
 
     def auth(self):

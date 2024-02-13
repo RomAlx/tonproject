@@ -29,6 +29,7 @@ services:
                 - TELEGRAM_BOT_API_TOKEN=${TELEGRAM_BOT_API_TOKEN_DEV}
                 - NOWPAYMENTS_API_KEY=${NOWPAYMENTS_API_KEY_DEV}
                 - NOWPAYMENTS_SECRET=${NOWPAYMENTS_SECRET_DEV}
+                - NOWPAYMENTS_SECRET_2FA=${NOWPAYMENTS_SECRET_2FA_DEV}
                 - IS_TESTNET=${IS_TESTNET}
                 - TON_API_KEY=${TON_DEV_API_KEY}
                 - WALLET=${WALLET_DEV}

@@ -6,7 +6,7 @@ from starlette.responses import FileResponse
 from ..logs.logger import Logger
 
 router = APIRouter()
-logger = Logger(name="routes").get_logger()
+logger = Logger(name="routes.routes").get_logger()
 
 load_dotenv()
 base_dir = os.getenv("BASE_DIR")

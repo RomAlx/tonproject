@@ -28,6 +28,9 @@ services:
             args:
                 - PROJECT_URL=${PROJECT_PROD_URL}
                 - TELEGRAM_BOT_API_TOKEN=${TELEGRAM_BOT_API_TOKEN_PROD}
+                - NOWPAYMENTS_API_KEY=${NOWPAYMENTS_API_KEY_PROD}
+                - NOWPAYMENTS_SECRET=${NOWPAYMENTS_SECRET_PROD}
+                - NOWPAYMENTS_SECRET_2FA=${NOWPAYMENTS_SECRET_2FA_PROD}
                 - IS_TESTNET=${IS_TESTNET}
                 - TON_API_KEY=${TON_PROD_API_KEY}
                 - WALLET=${WALLET_PROD}

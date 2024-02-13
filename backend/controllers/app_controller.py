@@ -6,11 +6,12 @@ from ..logs.logger import Logger
 
 from ..models.user import User
 from backend.repositories.user_repository import UserRepository as user_repository
+from backend.repositories.transaction_repository import TransactionRepository as transaction_repository
 
 
 class AppController:
     def __init__(self):
-        self.logger = Logger(name="app_controller").get_logger()
+        self.logger = Logger(name="controller.app").get_logger()
 
     def get_user_with_tg_id(self, tg_id: int):
         user = user_repository().get_user_with_tg_id(tg_id)
@@ -23,6 +24,26 @@ class AppController:
             "np_id": user.np_id,
             "username": user.username,
             "user_balance": balance.balance
+        }
+
+    def get_user_history(self, user_id: int, page: int, per_page: int):
+        transactions_page = transaction_repository().get_transaction_by_user_id(user_id, page, per_page)
+        self.logger.info(f"Transactions: {transactions_page}\n")
+        result = []
+        for transaction in transactions_page:
+            result.append(
+                {
+                    "payment_id": str(transaction.payment_id),
+                    "payment_status": transaction.payment_status,
+                    "type": transaction.type,
+                    "amount": transaction.amount,
+                    "symbol": transaction.symbol,
+                    "date": transaction.updated_at.strftime("%d.%m")
+                }
+            )
+        return {
+            'page': page + 1,
+            'result': result
         }
 
     def generate_qr(self, text: str):

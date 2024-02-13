@@ -12,7 +12,7 @@ from ..chat.chat_config import Chat
 
 class TelegramController:
     def __init__(self):
-        self.logger = Logger(name="telegram_controller").get_logger()
+        self.logger = Logger(name="controller.telegram").get_logger()
         self.chat = Chat()
         self.tg = Telegram()
         self.bot = self.tg.bot

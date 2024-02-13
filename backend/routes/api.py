@@ -10,7 +10,7 @@ from ..controllers.nowpayments_controller import NowPaymentsController as nowpay
 # from ..controllers.ton_controller import TonController as ton_controller
 
 router = APIRouter()
-logger = Logger(name="api").get_logger()
+logger = Logger(name="routes.api").get_logger()
 # ton_controller = ton_controller()
 telegram_controller = telegram_controller()
 app_controller = app_controller()
@@ -35,6 +35,16 @@ async def app_user_get(request: Request):
     tg_id = int(request.query_params.get('tg_id'))
     logger.info(f"Requested user: {tg_id}")
     data = app_controller.get_user_with_tg_id(tg_id=tg_id)
+    return JSONResponse(data)
+
+
+@router.get("/app/get_history")
+async def app_get_history(request: Request):
+    user_id = int(request.query_params.get('user_id'))
+    page = int(request.query_params.get('page', 0))
+    per_page = int(request.query_params.get('per_page'))
+    logger.info(f"Requested user history: {user_id}")
+    data = app_controller.get_user_history(user_id=user_id, page=page, per_page=per_page)
     return JSONResponse(data)
 
 

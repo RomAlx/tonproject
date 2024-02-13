@@ -6,7 +6,7 @@
 import Withdraw from "@/components/balance/withdraw/Withdraw.vue";
 
 export default {
-  name: "DashView",
+  name: "WithdrawView",
   components: {
     Withdraw,
   },

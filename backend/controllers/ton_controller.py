@@ -22,7 +22,7 @@ class TonController:
         load_dotenv()
         self.ton_wallet = TonWallet()
         self.tonapi = self.ton_wallet.tonapi
-        self.logger = Logger(name="ton_controller").get_logger()
+        self.logger = Logger(name="controller.ton").get_logger()
         self.logger.info(f"Base wallet: {self.ton_wallet.base_wallet_address}\n"
                          f"Jetton address: {self.ton_wallet.jetton_address}")
 

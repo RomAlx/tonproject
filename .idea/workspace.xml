@@ -5,46 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/app_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/migrations/versions/98525ed3f1ab_update_transactions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/nowpayments/generate2facode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/nowpayments/get_transfer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/nowpayments/get_transfers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/repositories/transaction_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/utils/otp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workers/payout_write_off_checker_worker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/balance/dropdown_arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/symbols/btc_symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/symbols/trx_symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/symbols/usdt_symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/configs/symbols.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1fae9ad6-56e9-4a41-a683-18358a529c7f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/css/balance/history.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/history/canceled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/history/deposit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/history/done.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/history/waiting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/icons/history/withdraw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/p2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/sound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/createjs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/detectmobilebrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/modernizr-2.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/vendor/p2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/balance/history/History.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/balance/HistoryView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/app_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/app_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/nowpayments_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/nowpayments_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/shit_controller.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/telegram_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/versions/3b2094e15251_init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/migrations/versions/925e7fd9e5d4_init_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/wallet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/nowpayments/get_user_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nowpayments/get_user_balance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/nowpayments/get_users_accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/nowpayments/get_users_accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/objects/Celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/objects/Celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repositories/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ton_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ton_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/repositories/transaction_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/repositories/transaction_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/workers/payout_write_off_checker_worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workers/payout_write_off_checker_worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/supervisord/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/supervisord/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/balance/deposit.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/balance/deposit.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/balance/withdraw.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/balance/withdraw.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/dashboard.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/dashboard.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/balance/deposit/Deposit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/balance/deposit/Deposit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/balance/withdraw/Withdraw.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/balance/withdraw/Withdraw.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/mob.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/mob.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/dash/DashBoard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dash/DashBoard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/game/Game.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/game/Game.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/balance/DepositView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/balance/DepositView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/balance/WithdrawView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/balance/WithdrawView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -63,7 +67,6 @@
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/traces.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/traces.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/roma/PycharmProjects/tonproject/backend/workers",
+    "last_opened_file_path": "/Users/roma/PycharmProjects/tonproject/frontend/src/assets/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,18 +144,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets/js" />
       <recent name="$PROJECT_DIR$/backend/workers" />
       <recent name="$PROJECT_DIR$/backend/repositories" />
       <recent name="$PROJECT_DIR$/backend/nowpayments" />
       <recent name="$PROJECT_DIR$/frontend/dist" />
-      <recent name="$PROJECT_DIR$/backend/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/history" />
       <recent name="$PROJECT_DIR$/backend/utils" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/symbols" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/balance" />
       <recent name="$PROJECT_DIR$/backend/nowpayments" />
-      <recent name="$PROJECT_DIR$/json/ton" />
     </key>
   </component>
   <component name="RunManager" selected="Python.generate2facode">
@@ -332,7 +335,9 @@
       <workItem from="1707027531920" duration="17417000" />
       <workItem from="1707157346577" duration="22934000" />
       <workItem from="1707357573869" duration="33792000" />
-      <workItem from="1707511574211" duration="21186000" />
+      <workItem from="1707511574211" duration="24412000" />
+      <workItem from="1707637440029" duration="846000" />
+      <workItem from="1707801464181" duration="13978000" />
     </task>
     <servers />
   </component>
