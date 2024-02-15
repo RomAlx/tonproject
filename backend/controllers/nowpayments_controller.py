@@ -91,6 +91,7 @@ class NowPaymentsController:
             headers=headers,
             data=payload)
         user = UserRepository.get_user_with_np_id(np_id=np_id)
+        self.logger.info(json.dumps(response.json(), indent=4, ensure_ascii=False, sort_keys=True))
         UserRepository.update_users_balance(user, response.json()['result']['balances']['ton']['amount'])
         return {
             "user_balance": UserRepository.get_user_balance(user).balance

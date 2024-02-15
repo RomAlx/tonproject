@@ -24,59 +24,47 @@
 </template>
 
 <script>
-// import canvas from "@/assets/js/canvas"
-// import game from "@/assets/js/game"
-// import init from "@/assets/js/init"
-// import loader from "@/assets/js/loader"
-// import main from "@/assets/js/main"
-// import mobile from "@/assets/js/mobile"
-// import p2 from "@/assets/js/p2"
-// import plugins from "@/assets/js/plugins"
-// import sound from "@/assets/js/sound"
+import {WebAudioPlugin} from "createjs-module"
+
+import {checkBrowser, resizeLoaderFunc} from "@/components/game/GameCore/init"
 
 export default {
   name: 'GameCore',
+  data() {},
   methods: {
-    // loadScript(source, callback) {
-    //   let script = document.createElement('script');
-    //   script.type = 'text/javascript';
-    //   script.src = source;
-    //   script.defer = true;
-    //
-    //   script.onload = () => {
-    //     console.log(`Скрипт ${source} успешно загружен`);
-    //     if (callback) callback();
-    //   };
-    //
-    //   script.onerror = () => {
-    //     console.error(`Ошибка при загрузке скрипта ${source}`);
-    //   };
-    //
-    //   document.body.appendChild(script);
-    // }
+    resumeAudioContext() {
+      try {
+        // Предполагается, что 'createjs' доступен в вашем приложении
+        if (WebAudioPlugin.context.state === 'suspended') {
+          WebAudioPlugin.context.resume();
+          window.removeEventListener('click', this.resumeAudioContext);
+        }
+      } catch (e) {
+        console.error('There was an error while trying to resume the SoundJS Web Audio context...');
+        console.error(e);
+      }
+    }
   },
   mounted() {
-    const JSSources = [
-      canvas,
-      game,
-      init,
-      loader,
-      main,
-      mobile,
-      p2,
-      plugins,
-      sound
-    ]
-    JSSources.forEach(source => {
-      // Загружаем скрипты, когда компонент монтируется
-      this.loadScript(source, () => {
-        console.log('Скрипт подключен и готов к использованию');
-        // Здесь код, который выполнится после загрузки скрипта
-      });
-    });
+    checkBrowser();
+
+    if (window.location.protocol === 'file') {
+      alert("To install the game just upload folder 'game' to your server. The game won't run locally with some browser like Chrome due to some security mode.");
+    }
+
+    window.addEventListener('click', this.resumeAudioContext);
+    window.addEventListener('resize',() => resizeLoaderFunc);
+    resizeLoaderFunc(); // вызываем сразу, чтобы применить необходимые изменения при монтировании
+  },
+
+  beforeUnmount() {
+    // Удаление обработчиков событий при уничтожении компонента
+    window.removeEventListener('click', this.resumeAudioContext);
+    window.removeEventListener('resize', resizeLoaderFunc);
   }
-}
+};
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
