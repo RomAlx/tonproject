@@ -7,7 +7,7 @@ import { Sound } from "createjs-module";
 import {initVars} from "@/components/game/GameCore/init";
 import {checkMobileEvent} from "@/components/game/GameCore/mobile";
 import {resizeGameFunc, initMain} from "@/components/game/GameCore/main";
-import {soundVar, setVarsSound} from "@/components/game/GameCore/sound";
+import {soundVars, setVarsSound} from "@/components/game/GameCore/sound";
 import {checkIfMobile} from "@/components/game/GameCore/plugins";
 /*!
 *
@@ -76,18 +76,18 @@ export function initPreload(){
 			{src:'assets/button_settings.png', id:'buttonSettings'}
 	];
 	
-	soundVar.soundOn = true;
+	soundVars.soundOn = true;
 	if(checkIfMobile || initVars.isTablet){
-		if(!soundVar.enableMobileSound){
+		if(!soundVars.enableMobileSound){
 			setVarsSound('soundOn', false);
 		}
 	}else{
-		if(!soundVar.enableDesktopSound){
+		if(!soundVars.enableDesktopSound){
 			setVarsSound('soundOn', false);
 		}
 	}
 	
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		loaderVars.manifest.push({src:'assets/sounds/sound_result.ogg', id:'soundResult'});
 		loaderVars.manifest.push({src:'assets/sounds/sound_button.ogg', id:'soundClick'});
 		loaderVars.manifest.push({src:'assets/sounds/sound_start.ogg', id:'soundStart'});

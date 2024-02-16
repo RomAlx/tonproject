@@ -24,45 +24,93 @@
 </template>
 
 <script>
-import {WebAudioPlugin} from "createjs-module"
+// import {WebAudioPlugin} from "createjs-module"
+//
+// import {checkBrowser, resizeLoaderFunc} from "@/components/game/GameCore/gameCore"
 
-import {checkBrowser, resizeLoaderFunc} from "@/components/game/GameCore/init"
 
 export default {
   name: 'GameCore',
-  data() {},
+  data() {
+    return {
+      scripts: [
+        "js/vendor/jquery.min.js",
+        "js/vendor/detectmobilebrowser.js",
+        "js/vendor/createjs.min.js",
+        "js/vendor/TweenMax.min.js",
+        "js/vendor/p2.min.js",
+        "js/plugins.js",
+        "js/sound.js",
+        "js/canvas.js",
+        "js/p2.js",
+        "js/game.js",
+        "js/mobile.js",
+        "js/main.js",
+        "js/loader.js",
+        "js/init.js",
+      ],
+      loadedScripts: [] // Для хранения загруженных тэгов скриптов
+    }
+  },
   methods: {
-    resumeAudioContext() {
-      try {
-        // Предполагается, что 'createjs' доступен в вашем приложении
-        if (WebAudioPlugin.context.state === 'suspended') {
-          WebAudioPlugin.context.resume();
-          window.removeEventListener('click', this.resumeAudioContext);
-        }
-      } catch (e) {
-        console.error('There was an error while trying to resume the SoundJS Web Audio context...');
-        console.error(e);
-      }
+    loadScripts() {
+      this.scripts.forEach(src => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = false; // Для последовательной загрузки
+
+        document.body.appendChild(script);
+        this.loadedScripts.push(script); // Добавляем скрипт в массив для последующего удаления
+      });
+    },
+    removeScripts() {
+      // Удаление всех скриптов, которые были добавлены
+      this.loadedScripts.forEach(script => {
+        document.body.removeChild(script);
+      });
+      // Очистка массива
+      this.loadedScripts = [];
     }
   },
   mounted() {
-    checkBrowser();
-
-    if (window.location.protocol === 'file') {
-      alert("To install the game just upload folder 'game' to your server. The game won't run locally with some browser like Chrome due to some security mode.");
-    }
-
-    window.addEventListener('click', this.resumeAudioContext);
-    window.addEventListener('resize',() => resizeLoaderFunc);
-    resizeLoaderFunc(); // вызываем сразу, чтобы применить необходимые изменения при монтировании
+    this.loadScripts(); // Загрузка скриптов при монтировании компонента
   },
-
   beforeUnmount() {
-    // Удаление обработчиков событий при уничтожении компонента
-    window.removeEventListener('click', this.resumeAudioContext);
-    window.removeEventListener('resize', resizeLoaderFunc);
+    this.removeScripts(); // Удаление скриптов перед размонтированием компонента
   }
-};
+}
+  // methods: {
+  //   resumeAudioContext() {
+  //     try {
+  //       // Предполагается, что 'createjs' доступен в вашем приложении
+  //       if (WebAudioPlugin.context.state === 'suspended') {
+  //         WebAudioPlugin.context.resume();
+  //         window.removeEventListener('click', this.resumeAudioContext);
+  //       }
+  //     } catch (e) {
+  //       console.error('There was an error while trying to resume the SoundJS Web Audio context...');
+  //       console.error(e);
+  //     }
+  //   }
+  // },
+  // mounted() {
+  //   checkBrowser();
+  //
+  //   if (window.location.protocol === 'file') {
+  //     alert("To install the game just upload folder 'game' to your server. The game won't run locally with some browser like Chrome due to some security mode.");
+  //   }
+  //
+  //   window.addEventListener('click', this.resumeAudioContext);
+  //   window.addEventListener('resize',() => resizeLoaderFunc);
+  //   resizeLoaderFunc(); // вызываем сразу, чтобы применить необходимые изменения при монтировании
+  // },
+  //
+  // beforeUnmount() {
+  //   // Удаление обработчиков событий при уничтожении компонента
+  //   window.removeEventListener('click', this.resumeAudioContext);
+  //   window.removeEventListener('resize', resizeLoaderFunc);
+//   }
+// };
 </script>
 
 

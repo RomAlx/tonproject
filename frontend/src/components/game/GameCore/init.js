@@ -13,16 +13,6 @@ export let initVars = {
     deviceVer: null,
 };
 
-// Экспортируем функцию для изменения переменных
-export function setVarsInit(name, value) {
-    // eslint-disable-next-line no-prototype-builtins
-    if (initVars.hasOwnProperty(name)) {
-        initVars[name] = value;
-    } else {
-        console.error(`Variable "${name}" does not exist in init.js.`);
-    }
-}
-
 
 /*!
  * 

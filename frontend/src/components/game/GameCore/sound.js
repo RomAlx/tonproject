@@ -4,12 +4,12 @@
 import $ from "jquery"
 import { Sound } from "createjs-module";
 
-export let soundVar = {
+export let soundVars = {
 	enableDesktopSound: true, //sound for dekstop
 	enableMobileSound : true, //sound for mobile and tablet
-	soundOn: null,
-	soundMute : false,
-	musicMute : false,
+	soundOn: false,
+	soundMute : true,
+	musicMute : true,
 	soundID : 0,
 	soundPushArr : [],
 	soundLoopPushArr : [],
@@ -19,8 +19,8 @@ export let soundVar = {
 
 export function setVarsSound(name, value) {
     // eslint-disable-next-line no-prototype-builtins
-    if (soundVar.hasOwnProperty(name)) {
-        soundVar[name] = value;
+    if (soundVars.hasOwnProperty(name)) {
+        soundVars[name] = value;
     } else {
         console.error(`Variable "${name}" does not exist in sound.js.`);
     }
@@ -28,10 +28,10 @@ export function setVarsSound(name, value) {
 
 $.sound = {};
 export function playSound(soundName, vol){
-	if(soundVar.soundOn){
-		var thisSoundID = soundVar.soundID;
-		soundVar.soundPushArr.push(thisSoundID);
-		soundVar.soundID++;
+	if(soundVars.soundOn){
+		var thisSoundID = soundVars.soundID;
+		soundVars.soundPushArr.push(thisSoundID);
+		soundVars.soundID++;
 
 		var defaultVol = vol === undefined ? 1 : vol;
 		$.sound[thisSoundID] = Sound.play(soundName);
@@ -40,18 +40,18 @@ export function playSound(soundName, vol){
 
 		$.sound[thisSoundID].removeAllEventListeners();
 		$.sound[thisSoundID].addEventListener ("complete", function() {
-			var removeSoundIndex = soundVar.soundPushArr.indexOf(thisSoundID);
+			var removeSoundIndex = soundVars.soundPushArr.indexOf(thisSoundID);
 			if(removeSoundIndex !== -1){
-				soundVar.soundPushArr.splice(removeSoundIndex, 1);
+				soundVars.soundPushArr.splice(removeSoundIndex, 1);
 			}
 		});
 	}
 }
 
 export function playSoundLoop(soundName){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]==null){
-			soundVar.soundLoopPushArr.push(soundName);
+			soundVars.soundLoopPushArr.push(soundName);
 
 			$.sound[soundName] = Sound.play(soundName);
 			$.sound[soundName].defaultVol = 1;
@@ -66,7 +66,7 @@ export function playSoundLoop(soundName){
 }
 
 export function toggleSoundLoop(soundName, con){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]!=null){
 			if(con){
 				$.sound[soundName].play();
@@ -78,23 +78,23 @@ export function toggleSoundLoop(soundName, con){
 }
 
 export function stopSoundLoop(soundName){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]!=null){
 			$.sound[soundName].stop();
 			$.sound[soundName]=null;
 
-			var soundLoopIndex = soundVar.soundLoopPushArr.indexOf(soundName);
+			var soundLoopIndex = soundVars.soundLoopPushArr.indexOf(soundName);
 			if(soundLoopIndex !== -1){
-				soundVar.soundLoopPushArr.splice(soundLoopIndex, 1);
+				soundVars.soundLoopPushArr.splice(soundLoopIndex, 1);
 			}
 		}
 	}
 }
 
 export function playMusicLoop(soundName){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]==null){
-			soundVar.musicPushArr.push(soundName);
+			soundVars.musicPushArr.push(soundName);
 
 			$.sound[soundName] = Sound.play(soundName);
 			$.sound[soundName].defaultVol = 1;
@@ -109,7 +109,7 @@ export function playMusicLoop(soundName){
 }
 
 export function toggleMusicLoop(soundName, con){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]!=null){
 			if(con){
 				$.sound[soundName].play();
@@ -121,14 +121,14 @@ export function toggleMusicLoop(soundName, con){
 }
 
 export function stopMusicLoop(soundName){
-	if(soundVar.soundOn){
+	if(soundVars.soundOn){
 		if($.sound[soundName]!=null){
 			$.sound[soundName].stop();
 			$.sound[soundName]=null;
 
-			var soundLoopIndex = soundVar.musicPushArr.indexOf(soundName);
+			var soundLoopIndex = soundVars.musicPushArr.indexOf(soundName);
 			if(soundLoopIndex !== -1){
-				soundVar.musicPushArr.splice(soundLoopIndex, 1);
+				soundVars.musicPushArr.splice(soundLoopIndex, 1);
 			}
 		}
 	}
@@ -139,56 +139,56 @@ export function stopSound(){
 }
 
 export function toggleSoundInMute(con){
-	if(soundVar.soundOn){
-		soundVar.soundMute = con;
-		for(var n=0; n<soundVar.soundPushArr.length; n++){
-			setSoundVolume(soundVar.soundPushArr[n]);
+	if(soundVars.soundOn){
+		soundVars.soundMute = con;
+		for(var n=0; n<soundVars.soundPushArr.length; n++){
+			setSoundVolume(soundVars.soundPushArr[n]);
 		}
-		for(n=0; n<soundVar.soundLoopPushArr.length; n++){
-			setSoundLoopVolume(soundVar.soundLoopPushArr[n]);
+		for(n=0; n<soundVars.soundLoopPushArr.length; n++){
+			setSoundLoopVolume(soundVars.soundLoopPushArr[n]);
 		}
 		setAudioVolume();
 	}
 }
 
 export function toggleMusicInMute(con){
-	if(soundVar.soundOn){
-		soundVar.musicMute = con;
-		for(var n=0; n<soundVar.musicPushArr.length; n++){
-			setMusicVolume(soundVar.musicPushArr[n]);
+	if(soundVars.soundOn){
+		soundVars.musicMute = con;
+		for(var n=0; n<soundVars.musicPushArr.length; n++){
+			setMusicVolume(soundVars.musicPushArr[n]);
 		}
 	}
 }
 
 export function setSoundVolume(id, vol){
-	if(soundVar.soundOn){
-		var soundIndex = soundVar.soundPushArr.indexOf(id);
+	if(soundVars.soundOn){
+		var soundIndex = soundVars.soundPushArr.indexOf(id);
 		if(soundIndex !== -1){
-			var defaultVol = vol === undefined ? $.sound[soundVar.soundPushArr[soundIndex]].defaultVol : vol;
-			$.sound[soundVar.soundPushArr[soundIndex]].volume = soundVar.soundMute === false ? defaultVol : 0;
-			$.sound[soundVar.soundPushArr[soundIndex]].defaultVol = defaultVol;
+			var defaultVol = vol === undefined ? $.sound[soundVars.soundPushArr[soundIndex]].defaultVol : vol;
+			$.sound[soundVars.soundPushArr[soundIndex]].volume = soundVars.soundMute === false ? defaultVol : 0;
+			$.sound[soundVars.soundPushArr[soundIndex]].defaultVol = defaultVol;
 		}
 	}
 }
 
 export function setSoundLoopVolume(soundLoop, vol){
-	if(soundVar.soundOn){
-		var soundLoopIndex = soundVar.soundLoopPushArr.indexOf(soundLoop);
+	if(soundVars.soundOn){
+		var soundLoopIndex = soundVars.soundLoopPushArr.indexOf(soundLoop);
 		if(soundLoopIndex !== -1){
-			var defaultVol = vol === undefined ? $.sound[soundVar.soundLoopPushArr[soundLoopIndex]].defaultVol : vol;
-			$.sound[soundVar.soundLoopPushArr[soundLoopIndex]].volume = soundVar.soundMute === false ? defaultVol : 0;
-			$.sound[soundVar.soundLoopPushArr[soundLoopIndex]].defaultVol = defaultVol;
+			var defaultVol = vol === undefined ? $.sound[soundVars.soundLoopPushArr[soundLoopIndex]].defaultVol : vol;
+			$.sound[soundVars.soundLoopPushArr[soundLoopIndex]].volume = soundVars.soundMute === false ? defaultVol : 0;
+			$.sound[soundVars.soundLoopPushArr[soundLoopIndex]].defaultVol = defaultVol;
 		}
 	}
 }
 
 export function setMusicVolume(soundLoop, vol){
-	if(soundVar.soundOn){
-		var musicIndex = soundVar.musicPushArr.indexOf(soundLoop);
+	if(soundVars.soundOn){
+		var musicIndex = soundVars.musicPushArr.indexOf(soundLoop);
 		if(musicIndex !== -1){
-			var defaultVol = vol === undefined ? $.sound[soundVar.musicPushArr[musicIndex]].defaultVol : vol;
-			$.sound[soundVar.musicPushArr[musicIndex]].volume = soundVar.musicMute === false ? defaultVol : 0;
-			$.sound[soundVar.musicPushArr[musicIndex]].defaultVol = defaultVol;
+			var defaultVol = vol === undefined ? $.sound[soundVars.musicPushArr[musicIndex]].defaultVol : vol;
+			$.sound[soundVars.musicPushArr[musicIndex]].volume = soundVars.musicMute === false ? defaultVol : 0;
+			$.sound[soundVars.musicPushArr[musicIndex]].defaultVol = defaultVol;
 		}
 	}
 }
@@ -199,14 +199,14 @@ export function setMusicVolume(soundLoop, vol){
  * 
  */
 export function playAudio(audioName, callback){
-	if(soundVar.soundOn){
-		if(soundVar.audioFile==null){
-			soundVar.audioFile = Sound.play(audioName);
+	if(soundVars.soundOn){
+		if(soundVars.audioFile==null){
+			soundVars.audioFile = Sound.play(audioName);
 			setAudioVolume();
 
-			soundVar.audioFile.removeAllEventListeners();
-			soundVar.audioFile.addEventListener ("complete", function() {
-				soundVar.audioFile = null;
+			soundVars.audioFile.removeAllEventListeners();
+			soundVars.audioFile.addEventListener ("complete", function() {
+				soundVars.audioFile = null;
 				
 				if (typeof callback == "function")
 					callback();
@@ -216,18 +216,18 @@ export function playAudio(audioName, callback){
 }
 
 export function stopAudio(){
-	if(soundVar.soundOn){
-		if(soundVar.audioFile != null){
-			soundVar.audioFile.stop();
-			soundVar.audioFile = null;
+	if(soundVars.soundOn){
+		if(soundVars.audioFile != null){
+			soundVars.audioFile.stop();
+			soundVars.audioFile = null;
 		}
 	}
 }
 
 export function setAudioVolume(){
-	if(soundVar.soundOn){
-		if(soundVar.audioFile != null){
-			soundVar.audioFile.volume = soundVar.soundMute === false ? 1 : 0;
+	if(soundVars.soundOn){
+		if(soundVars.audioFile != null){
+			soundVars.audioFile.volume = soundVars.soundMute === false ? 1 : 0;
 		}
 	}
 }
