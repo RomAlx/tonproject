@@ -1,14 +1,14 @@
 <template>
-  <GameCore />
+  <Game />
 </template>
 
 <script>
-import GameCore from "@/components/game/Game.vue";
+import Game from "@/components/game/Game.vue";
 
 export default {
   name: "GameView",
   components: {
-    GameCore,
+    Game,
   },
 };
 </script>

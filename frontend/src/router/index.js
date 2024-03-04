@@ -23,8 +23,13 @@ const routes = [
     },
     {
         path: '/balance/history',
-        name: 'withdraw',
+        name: 'history',
         component: () => import('../views/balance/HistoryView.vue'),
+    },
+    {
+        path: '/error',
+        name: 'error',
+        component: () => import('../views/app/ErrorView.vue'),
     }
 ]
 

@@ -1,7 +1,7 @@
 <template>
   <div class="only_mobile">
-<!--    {{ this.user }}-->
-<!--    {{ this.payment_info }}-->
+    <!--    {{ this.user }}-->
+    <!--    {{ this.payment_info }}-->
     <div class="container">
       <div class="d-flex justify-content-center">
         <div class="deposit_block">
@@ -34,8 +34,13 @@
           <div v-if="this.payment_info.is_relevant" class="input_wrapper">
             <input type="number" class="input_amount" :placeholder="this.payment_info.min_amount.toFixed(2)"
                    v-model.number="payment_amount"/>
-            <div v-if="this.asset.symbol!='btc'" class="min_amount">Min: {{ this.payment_info.min_amount.toFixed(2) }} {{ this.asset.value }}</div>
-            <div v-else class="min_amount">Min: {{ this.payment_info.min_amount.toFixed(7) }} {{ this.asset.value }}</div>
+            <div v-if="this.asset.symbol!='btc'" class="min_amount">Min: {{ this.payment_info.min_amount.toFixed(2) }}
+              {{ this.asset.value }}
+            </div>
+            <div v-else class="min_amount">Min: {{ this.payment_info.min_amount.toFixed(7) }} {{
+                this.asset.value
+              }}
+            </div>
           </div>
           <div v-if="this.payment_info.is_relevant && !this.payment_info.pay_address"
                class="pay_button"
@@ -44,7 +49,7 @@
           </div>
           <div v-if="this.payment_info.pay_address" class="pay_address">
             <p v-if="this.payment_info.amount_received">
-              Send {{this.payment_amount}} {{this.asset.value}} to this address<br>
+              Send {{ this.payment_amount }} {{ this.asset.value }} to this address<br>
               You will receive {{ this.payment_info.amount_received.toFixed(2) }} Ton after transfer and exchange fees
             </p>
             <img
@@ -52,9 +57,15 @@
                 :src="this.payment_info.qr_code_url"
                 alt="">
             <p v-for="text in this.text_wrapper(this.payment_info.pay_address)"
-               :key="text">
+               :key="text" @click="copyTextToClipboard(this.payment_info.pay_address)">
               {{ text }}
             </p>
+            <img
+                class="copy_img"
+                :src="this.copy_img"
+                alt=""
+                @click="copyTextToClipboard(this.payment_info.pay_address)"
+            >
           </div>
         </div>
       </div>
@@ -64,6 +75,8 @@
 
 <script>
 import symbolsConfig from "@/configs/symbols";
+import copy from "@/assets/img/icons/app/copy.svg";
+import copy_success from "@/assets/img/icons/app/copy-success.svg";
 import axios from "axios";
 import {Store} from "@/store";
 
@@ -91,10 +104,11 @@ export default {
       },
       payment_amount: 0,
       symbols: symbolsConfig,
+      copy_img: copy
     }
   },
   watch: {
-    payment_amount(){
+    payment_amount() {
       this.payment_info.pay_address = null
     }
   },
@@ -119,6 +133,9 @@ export default {
         const response = await axios.get(
             `${Store().getAPI}/np/min_payment`,
             {
+              headers: {
+                'X-AUTH': this.user.token,
+              },
               params: {
                 symbol: symbol,
               }
@@ -133,6 +150,7 @@ export default {
         }
       } catch (error) {
         console.error('Ошибка при выполнении GET запроса:', error);
+        this.$router.push('/error');
       }
     },
     async create_pay_page() {
@@ -140,6 +158,9 @@ export default {
         const response = await axios.get(
             `${Store().getAPI}/np/create_payment_page`,
             {
+              headers: {
+                'X-AUTH': this.user.token,
+              },
               params: {
                 np_id: this.user.np_id,
                 amount: this.payment_amount,
@@ -153,6 +174,7 @@ export default {
         this.generate_qr(this.payment_info.pay_address)
       } catch (error) {
         console.error('Ошибка при выполнении GET запроса:', error);
+        this.$router.push('/error');
       }
     },
     async generate_qr(text) {
@@ -168,6 +190,7 @@ export default {
         this.payment_info.qr_code_url = URL.createObjectURL(response.data)
       } catch (error) {
         console.error('Ошибка при выполнении GET запроса:', error);
+        this.$router.push('/error');
       }
     },
     text_wrapper(str) {
@@ -176,9 +199,22 @@ export default {
       let part1 = str.slice(0, half);
       let part2 = str.slice(half);
       return [part1, part2];
+    },
+    async copyTextToClipboard(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        this.copy_img = copy_success;
+      } catch (err) {
+        console.error('Failed to copy: ', err);
+      }
+    },
+    open_dashboard() {
+      this.$router.push('/');
     }
   },
   mounted() {
+    window.Telegram.WebApp.BackButton.isVisible = true;
+    window.Telegram.WebApp.BackButton.onClick(this.open_dashboard.bind(this))
     this.getUserInfo();
   }
 }

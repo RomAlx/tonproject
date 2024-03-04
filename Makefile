@@ -9,7 +9,6 @@ all: dev
 dev:
 	rm -rf ./backend/static/*
 	cp -R ./frontend/dist/* ./backend/static/
-	cp -R ./frontend/documentation ./backend/static/
 	$(DOCKER_COMPOSE_DEV) up --force-recreate
 
 # Сборка и запуск для продакшн
@@ -25,7 +24,6 @@ build_dev:
 	$(DOCKER_COMPOSE_DEV) build
 	rm -rf ./backend/static/*
 	cp -R ./frontend/dist/* ./backend/static/
-	cp -R ./frontend/documentation ./backend/static/
 	$(DOCKER_COMPOSE_DEV) up --force-recreate
 
 # Сборка для продакшн

@@ -1,8 +1,8 @@
 <template>
-  <div class="only_mobile">
+  <div v-if="user" class="only_mobile">
     <div class="container">
       <div class="d-flex justify-content-center">
-        <div v-if="user" class="balance_block">
+        <div  class="balance_block">
           <div class="row">
             <p class="balance username">{{ this.user.username }}</p>
           </div>
@@ -55,9 +55,9 @@
       <div class="d-flex justify-content-center">
         <div class="game_block">
           <RouterLink
-              to="/game"
-              class="no-links"
-          >
+                  to="/game"
+                  class="no-links"
+              >
             <div class="game_button">
               <p>PLAY</p>
             </div>
@@ -91,7 +91,9 @@ export default {
   name: 'DashBoard',
   data() {
     return {
+      user_id: null,
       user: null,
+      game_link: null,
     }
   },
   methods: {
@@ -102,14 +104,14 @@ export default {
             `${Store().getAPI}/app/user`,
             {
               params: {
-                tg_id: 324354843,
+                tg_id: this.user_id,
+                // tg_id: 324354843,
               }
             }
         );
         if (response.data.user_id !== undefined) {
           Store().setUser(response.data)
           this.user = Store().getUser
-          console.log(this.user)
           this.getUserBalance();
         }
       } catch (error) {
@@ -138,6 +140,8 @@ export default {
     },
   },
   mounted() {
+    this.user_id = window.Telegram.WebApp.initDataUnsafe.user.id
+    window.Telegram.WebApp.BackButton.isVisible = false;
     this.getUserInfo();
   },
   computed: {},

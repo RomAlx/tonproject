@@ -1,0 +1,139 @@
+.game_settings_block {
+  margin: 20px 0 5px 0;
+  padding: 10px;
+  width: 95%;
+  background: #col[s_bg];
+  border-radius: 10px;
+}
+
+.game_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #col[txt_base];
+
+  &.second {
+    color: #col[txt_s]
+  }
+
+  &.lil_size {
+    font-size: 20px;
+  }
+
+  &.header {
+    font-size: 16px;
+    color: #col[txt_s];
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
+
+  &.symbol {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.arrows {
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+  }
+}
+
+.game_history_block_no_content {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  width: 95%;
+  background: #col[s_bg];
+  border-radius: 10px;
+}
+
+.game_history_block {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0 10px 0;
+  padding: 10px;
+  width: 95%;
+  background: #col[s_bg];
+  border-radius: 10px;
+}
+
+.game_history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #col[txt_base];
+}
+
+.game_history_box {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #col[game_border];
+  border-radius: 5px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.win {
+  color: #col[win];
+}
+
+.lose {
+  color: #col[lose];
+}
+
+
+.gameCanvas {
+  margin-bottom: 10px;
+  background: #col[s_bg];
+  border: 1px solid #col[game_border];
+  border-radius: 10px;
+}
+
+.game_play_button {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 20%;
+  min-width: 200px;
+  background-color: #col[base_button_bg];
+  color: #col[base_button_color];
+  border-radius: 5px;
+  padding: 5px;
+
+  p {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 28px;
+  }
+}
+

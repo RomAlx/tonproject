@@ -10,6 +10,6 @@ PORT="80"
 echo "Создание туннеля ngrok..."
 
 # Запускаем ngrok с привязкой к субдомену
-ngrok http $PORT
+ngrok http --domain=ideally-apparent-newt.ngrok-free.app 80
 
-echo "Туннель ngrok запущен"
+#lt --port 80 --subdomain tonproject

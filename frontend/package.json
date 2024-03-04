@@ -27,6 +27,7 @@
     "markdown-it": "^14.0.0",
     "modernizr": "^3.13.0",
     "p2": "^0.7.1",
+    "phaser": "^3.80.1",
     "pinia": "^2.1.7",
     "preloadjs": "github:createjs/preloadjs",
     "register-service-worker": "^1.7.2",

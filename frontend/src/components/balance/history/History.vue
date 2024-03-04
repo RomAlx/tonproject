@@ -92,6 +92,9 @@ export default {
         const response = await axios.get(
             `${Store().getAPI}/app/get_history`,
             {
+              headers: {
+                'X-AUTH' : this.user.token,
+              },
               params: {
                 user_id: this.user.user_id,
                 page: page,
@@ -106,10 +109,15 @@ export default {
         }
       } catch (error) {
         console.error('Ошибка при выполнении GET запроса:', error);
+        this.$router.push('/error');
       }
-    },
+    },open_dashboard(){
+      this.$router.push('/');
+    }
   },
   mounted() {
+    window.Telegram.WebApp.BackButton.isVisible = true;
+    window.Telegram.WebApp.BackButton.onClick(this.open_dashboard.bind(this))
     this.getUserInfo();
     this.get_history(1)
   }

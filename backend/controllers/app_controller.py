@@ -7,6 +7,7 @@ from ..logs.logger import Logger
 from ..models.user import User
 from backend.repositories.user_repository import UserRepository as user_repository
 from backend.repositories.transaction_repository import TransactionRepository as transaction_repository
+from ..utils.jwt_util import JWTUtil
 
 
 class AppController:
@@ -16,6 +17,7 @@ class AppController:
     def get_user_with_tg_id(self, tg_id: int):
         user = user_repository().get_user_with_tg_id(tg_id)
         balance = user_repository().get_user_balance(user)
+        token = JWTUtil().encode_user_jwt(int(user.tg_id))
         self.logger.info(f"User: {user}\n"
                          f"Balance: {balance.balance}")
         return {
@@ -23,7 +25,8 @@ class AppController:
             "tg_id": user.tg_id,
             "np_id": user.np_id,
             "username": user.username,
-            "user_balance": balance.balance
+            "user_balance": balance.balance,
+            "token": token,
         }
 
     def get_user_history(self, user_id: int, page: int, per_page: int):

@@ -27,13 +27,14 @@ class NowPaymentsController:
         self.secret = os.getenv("NOWPAYMENTS_SECRET")
         self.api_key = os.getenv("NOWPAYMENTS_API_KEY")
         self.secret_2fa = os.getenv("NOWPAYMENTS_SECRET_2FA")
-        #self.secret_2fa = 'FRJDUSBZMIVCUZKJ'
+        self.login = os.getenv("NOWPAYMENTS_LOGIN")
+        self.password = os.getenv("NOWPAYMENTS_PASSWORD")
         self.main_symbol = 'ton'
 
     def auth(self):
         payload = json.dumps({
-            "email": "ton.project@yandex.ru",
-            "password": "TonProject1488"
+            "email": self.login,
+            "password": self.password
         })
         headers = {
             'Content-Type': 'application/json'
@@ -183,6 +184,25 @@ class NowPaymentsController:
         }
         response = requests.request("POST",
                                     url=self.url + 'sub-partner/write-off',
+                                    headers=headers,
+                                    data=payload
+                                    )
+        return response.json()
+
+    async def deposit_from_main(self, amount: float, np_id: int):
+        token = self.auth()
+        payload = json.dumps({
+            "amount": amount,
+            "currency": "ton",
+            "sub_partner_id": str(np_id)
+        })
+        headers = {
+            "Authorization": f'Bearer {token}',
+            'x-api-key': self.api_key,
+            'Content-Type': 'application/json'
+        }
+        response = requests.request("POST",
+                                    url=self.url + 'sub-partner/deposit',
                                     headers=headers,
                                     data=payload
                                     )

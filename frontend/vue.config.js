@@ -4,7 +4,8 @@ module.exports = defineConfig({
   devServer: {
 		proxy: {
 			'/api/': {
-				target: 'http://localhost:80/api/',
+				target: 'https://ideally-apparent-newt.ngrok-free.app/api/',
+				// target: 'http://localhost/api/',
 				changeOrigin: true,
 				pathRewrite: { '^/api/': '' },
 			},
