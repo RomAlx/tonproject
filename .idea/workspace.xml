@@ -6,48 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/css/app.899acf94.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/css/chunk-vendors.f09efd94.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/fonts/Nunito-Bold.24680196.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/fonts/Nunito-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/fonts/Nunito-Regular.f5e0ecdd.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/btc_symbol.f52bbd51.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/canceled.8c56ce58.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/copy-success.6f136d16.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/copy.7cfad2dd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/deposit.bd13e02e.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/deposit.cad05a25.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/done.c3184766.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/dropdown_arrow.57a80737.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/history.35a6fc00.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/left-arrow.df9d5d3b.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/right-arrow.31eb5853.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/ton_symbol.e942379d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/tonproject_logo.17044865.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/trx_symbol.88e0be54.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/usdt_symbol.c0f0b194.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/waiting.a051074f.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/withdraw.427e3d08.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/img/withdraw.b39f16c9.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/140.53c9d192.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/140.53c9d192.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/169.101a2e1c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/169.101a2e1c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/316.c2d16f09.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/316.c2d16f09.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/544.bcf39283.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/544.bcf39283.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/591.b25bde90.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/591.b25bde90.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/772.69419f16.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/772.69419f16.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/935.43968e92.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/935.43968e92.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/app.a3caf9e0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/app.a3caf9e0.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/chunk-vendors.50332984.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/js/chunk-vendors.50332984.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -314,7 +272,8 @@
       <workItem from="1709680242163" duration="1505000" />
       <workItem from="1709777107181" duration="3798000" />
       <workItem from="1709880211200" duration="668000" />
-      <workItem from="1710034368480" duration="2745000" />
+      <workItem from="1710034368480" duration="3312000" />
+      <workItem from="1710069957736" duration="1808000" />
     </task>
     <servers />
   </component>
