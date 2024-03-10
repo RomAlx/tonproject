@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="090fc090-9b16-4214-81ad-b701e0928e5d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_address.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/pytonapi/pytonapi/schema/_balance.py" afterDir="false" />
@@ -110,11 +109,11 @@
       <recent name="$PROJECT_DIR$/frontend/public/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/nginx/ssl" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/img/game/boxes" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/img/icons/app" />
       <recent name="$PROJECT_DIR$/frontend/public/fonts" />
       <recent name="$PROJECT_DIR$/frontend/public/css" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/img/game" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.gameCore.js">
@@ -273,7 +272,7 @@
       <workItem from="1709777107181" duration="3798000" />
       <workItem from="1709880211200" duration="668000" />
       <workItem from="1710034368480" duration="3312000" />
-      <workItem from="1710069957736" duration="1808000" />
+      <workItem from="1710069957736" duration="2386000" />
     </task>
     <servers />
   </component>

@@ -82,7 +82,7 @@ RUN pip install -r requirements.txt
 # Копируем остальные файлы проекта в рабочую директорию
 COPY . .
 
-RUN pip install ./libs/python-telegram-bot-master ./libs/pytonapi
+#RUN pip install ./libs/python-telegram-bot-master ./libs/pytonapi
 
 # Указываем порт, на котором будет работать приложение
 EXPOSE 8000 5555
