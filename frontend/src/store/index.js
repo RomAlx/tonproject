@@ -6,8 +6,9 @@ export default createPinia()
 export const Store = defineStore('store', {
     state: () => {
         return {
-            api_url: 'https://ideally-apparent-newt.ngrok-free.app/api',
+            // api_url: 'https://ideally-apparent-newt.ngrok-free.app/api',
             // api_url: 'http://localhost/api',
+            api_url: 'https://tonproject.ru/api',
             user: null,
         }
     },
