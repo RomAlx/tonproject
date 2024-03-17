@@ -2,7 +2,6 @@ import asyncio
 import json
 from fastapi import APIRouter, Request, HTTPException
 from fastapi.responses import JSONResponse, StreamingResponse
-from sqlalchemy.exc import SQLAlchemyError
 
 from ..logs.logger import Logger
 from ..controllers.telegram_controller import TelegramController as telegram_controller
